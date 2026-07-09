@@ -1,0 +1,12 @@
+# firstrade Ruleset for Shadowrocket
+DOMAIN-SUFFIX,expo.dev
+DOMAIN-SUFFIX,firstrade.com
+DOMAIN-SUFFIX,apptentive.com
+DOMAIN-SUFFIX,posthog.com
+DOMAIN-SUFFIX,firstrade.net
+DOMAIN-SUFFIX,hcaptcha.com
+DOMAIN-SUFFIX,benzinga.com
+DOMAIN,k41967p8-ios.mobile-messenger.intercom.com
+DOMAIN,nexus-websocket-a.intercom.io
+DOMAIN,svvzds.launches.appsflyersdk.com
+IP-CIDR,149.154.167.92/20,no-resolve
