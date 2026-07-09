@@ -9,4 +9,6 @@ DOMAIN-SUFFIX,benzinga.com
 DOMAIN,k41967p8-ios.mobile-messenger.intercom.com
 DOMAIN,nexus-websocket-a.intercom.io
 DOMAIN,svvzds.launches.appsflyersdk.com
+DOMAIN,6252a508cdfb.qtt-163cdn.com
 IP-CIDR,149.154.167.92/20,no-resolve
+IP-ASN,91.108.56.155/62014,no-resolve
