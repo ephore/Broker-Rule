@@ -29,6 +29,7 @@ IP-CIDR,139.59.210.98/32,no-resolve
 IP-CIDR,149.154.160.0/20,no-resolve
 IP-CIDR,149.154.166.120/20,no-resolve
 IP-CIDR,149.154.167.92/20,no-resolve
+IP-CIDR,149.154.167.223/20,no-resolve
 IP-CIDR,149.154.175.56/20,no-resolve
 IP-CIDR,149.154.175.50/20,no-resolve
 IP-CIDR,149.154.175.54/20,no-resolve
