@@ -1,11 +1,4 @@
-# NAME: PayPal
-# AUTHOR: blackmatrix7
-# REPO: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2025-06-06 09:16:55
-# DOMAIN-KEYWORD: 1
-# DOMAIN-SUFFIX: 246
-# USER-AGENT: 1
-# TOTAL: 248
+# PayPal Ruleset for Shadowrocket
 DOMAIN-SUFFIX,account-paypal.info
 DOMAIN-SUFFIX,account-paypal.net
 DOMAIN-SUFFIX,account-paypal.org
