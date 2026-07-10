@@ -1,11 +1,14 @@
 # Kraken Ruleset for Shadowrocket
 DOMAIN,sdk.iad-05.braze.com
 DOMAIN,cdn-settings.segment.com
+DOMAIN,asgpkt.cdn-settings.appsflyersdk.com
+DOMAIN,asgpkt.launches.appsflyersdk.com
+DOMAIN,content.ethoca.com
+DOMAIN,kraken.zendesk.com
 DOMAIN-SUFFIX,kraken.com
 DOMAIN-SUFFIX,kraken.onl
 DOMAIN-SUFFIX,statsigapi.net
 DOMAIN-SUFFIX,braze-images.com
 DOMAIN-SUFFIX,nsureapi.com
 DOMAIN-SUFFIX,sardine.ai
-DOMAIN-kEYWORD,kraken.
 DOMAIN-kEYWORD,s2xiwm.
