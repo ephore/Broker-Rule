@@ -1,11 +1,4 @@
-# NAME: Broker
-# AUTHOR: forecho
-# REPO: https://github.com/forecho/broker-rules
-# UPDATED: 2026-06-25
-# DOMAIN-SUFFIX: 76
-# DOMAIN: 18
-# IP-CIDR: 63
-# TOTAL: 157
+# Broker Ruleset for Shadowrocket
 DOMAIN-SUFFIX,9oju31.launches.appsflyersdk.com
 DOMAIN-SUFFIX,sgqt0j.launches.appsflyersdk.com
 DOMAIN-SUFFIX,shortconn.im.qcloud.com
@@ -61,10 +54,6 @@ DOMAIN-SUFFIX,api.lbkrs.com
 DOMAIN-SUFFIX,api-gl.lbkrs.com
 DOMAIN-SUFFIX,longbridge.cloud
 DOMAIN-SUFFIX,longbridge.sg
-DOMAIN-SUFFIX,schwab.com
-DOMAIN-SUFFIX,schwab.com.cn
-DOMAIN-SUFFIX,schwab.com.hk
-DOMAIN-SUFFIX,schwab.co.uk
 DOMAIN-SUFFIX,snowballsecurities.com
 DOMAIN-SUFFIX,snowball-x.com
 DOMAIN-SUFFIX,snowballfinance.com
