@@ -1,3 +1,11 @@
 # Kraken Ruleset for Shadowrocket
+DOMAIN,sdk.iad-05.braze.com
+DOMAIN,cdn-settings.segment.com
 DOMAIN-SUFFIX,kraken.com
 DOMAIN-SUFFIX,kraken.onl
+DOMAIN-SUFFIX,statsigapi.net
+DOMAIN-SUFFIX,braze-images.com
+DOMAIN-SUFFIX,nsureapi.com
+DOMAIN-SUFFIX,sardine.ai
+DOMAIN-kEYWORDS,kraken.
+DOMAIN-kEYWORDS,s2xiwm.
