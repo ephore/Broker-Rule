@@ -1,0 +1,9 @@
+# Ether.fi & Gate Ruleset for Shadowrocket
+DOMAIN-SUFFIX,ether.fi
+DOMAIN,api.eu.amplitude.com
+DOMAIN,pulse.walletconnect.com
+DOMAIN,api.web3modal.com
+DOMAIN,i5jcnk.cdn-settings.appsflyersdk.com
+DOMAIN,i5jcnk.launches.appsflyersdk.com
+DOMAIN,api.web3modal.org
+DOMAIN,pulse.walletconnect.org
