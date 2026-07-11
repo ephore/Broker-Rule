@@ -1,4 +1,5 @@
 # Cloudflare Ruleset for Shadowrocket
+DOMAIN-SUFFIX,cloudfront.net
 DOMAIN-SUFFIX,cf-ipfs.com
 DOMAIN-SUFFIX,cf-ns.com
 DOMAIN-SUFFIX,cf-ns.net
