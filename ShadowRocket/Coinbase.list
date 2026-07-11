@@ -1,0 +1,11 @@
+# Coinbase Ruleset for Shadowrocket
+DOMAIN-SUFFIX,coinbase.com
+DOMAIN-SUFFIX,riskified.com
+DOMAIN,riskified.com
+DOMAIN,i3h4gb.cdn-settings.appsflyersdk.com
+DOMAIN,i3h4gb.launches.appsflyersdk.com
+DOMAIN,i3h4gb.inapps.appsflyersdk.com
+DOMAIN,use1-turn.fpjs.io
+DOMAIN,api.sprig.com
+DOMAIN,icanhazip.com
+DOMAIN,1.datadog.pool.ntp.org
