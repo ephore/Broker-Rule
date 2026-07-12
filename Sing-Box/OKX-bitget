@@ -1,0 +1,63 @@
+{
+  "version": 2,
+  "rules": [
+    {
+      "domain": [
+        "aa.online-metrix.net",
+        "ant.brindovaxel.online",
+        "ant.fluvenkarthon.info",
+        "ant.quorbentaxil.cc",
+        "ant.vrenthaliox.site",
+        "ant.zaltrimondex.xyz",
+        "api-app-grpc.wwmxd.fun",
+        "api-app-grpc.wwmxd.org",
+        "api-app-grpc.wwmxd.shop",
+        "api-app-slow.bitapi.vip",
+        "api-app-slow.chainnear.com",
+        "api.onesignal.com",
+        "cdn.jjdsn.site",
+        "conf.chainnear.com",
+        "contendvc.cnouyi.pizza",
+        "h1dz7f.launches.appsflyersdk.com",
+        "h64.online-metrix.net",
+        "img.gurenla.com",
+        "in5pvt-cdn-settings.appsflyersdk.com",
+        "in5pvt-launches.appsflyersdk.com",
+        "ipyp0a.inapps.appsflyersdk.com",
+        "ipyp0a.launches.appsflyersdk.com",
+        "log.noxiaohao.com",
+        "newshare.bwb.global",
+        "newshare.bwb.online",
+        "pushstat-hk.engagelab.com",
+        "pushstat.api.engagelab.cc",
+        "relay.walletconnect.org",
+        "sis-hk.push.engage7.com",
+        "sis-hk.push.engageforce.net",
+        "sis-hk.push.theengagelab.com",
+        "sis.push.engage7.com",
+        "sis.push.engageforce.net",
+        "sis.push.theengagelab.com",
+        "static-web.jjdsn.vip",
+        "verify.walletconnect.org",
+        "videocloud-i18n.byteplusvod.com",
+        "videocloud-i18n.byteplusvod.com",
+        "vod-license-m.bytepluscdn.com",
+        "widgets.marqeta.com"
+      ],
+      "domain_suffix": [
+        "abcdstable.com",
+        "bitget.com",
+        "bitgetapp.com",
+        "bitgetapps.com",
+        "bitkeep.app",
+        "bitkeep.com",
+        "bitkeep.top",
+        "bitkeep.vip",
+        "krbitget.com",
+        "okex.com",
+        "oklink.com",
+        "okx.com"
+      ]
+    }
+  ]
+}
