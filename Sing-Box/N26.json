@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "rules": [
+    {
+      "domain_suffix": [
+        "bugsnag.com",
+        "n26.com",
+        "number26.de",
+        "prodregistryv2.org",
+        "tech26.de",
+        "usercentrics.eu"
+      ]
+    }
+  ]
+}
