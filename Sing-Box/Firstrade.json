@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "rules": [
+    {
+      "domain": [
+        "6252a508cdfb.qtt-163cdn.com",
+        "k41967p8-ios.mobile-messenger.intercom.com",
+        "nexus-websocket-a.intercom.io",
+        "svvzds.launches.appsflyersdk.com"
+      ],
+      "domain_suffix": [
+        "apptentive.com",
+        "benzinga.com",
+        "expo.dev",
+        "firstrade.com",
+        "firstrade.net",
+        "hcaptcha.com",
+        "posthog.com"
+      ]
+    }
+  ]
+}
