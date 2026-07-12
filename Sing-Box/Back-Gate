@@ -1,0 +1,29 @@
+{
+  "version": 2,
+  "rules": [
+    {
+      "domain": [
+        "2qdyzb-cdn-settings.appsflyersdk.com",
+        "2qdyzb-inapps.appsflyersdk.com",
+        "api-normal-g1.studiotv.net",
+        "api.iterable.com",
+        "app.smartappnet.net",
+        "app.studiotv.net",
+        "assets.eascdn.net",
+        "backpack-api.xnfts.dev",
+        "gavatar.staticimgs.com",
+        "gimg.staticimgs.com",
+        "h5off.airpackapp.com",
+        "snssdk.gatedata.org"
+      ],
+      "domain_suffix": [
+        "backpack.app",
+        "backpack.exchange",
+        "freshmarkethome.com",
+        "gateio.im",
+        "gposts.net",
+        "madlads.com"
+      ]
+    }
+  ]
+}
