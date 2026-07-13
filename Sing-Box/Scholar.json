@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "crossmark.crossref.org",
+        "wiley.scienceconnect.io",
+        "crossmark-cdn.crossref.org"
+      ],
+      "domain_suffix": [
+        "acs.org",
+        "wiley.com",
+        "elsevier.com",
+        "rsc.org",
+        "nature.com",
+        "science.org",
+        "springer.com",
+        "reaxys.com",
+        "cas.org",
+        "optica.org",
+        "sciencedirect.com",
+        "sciencedirectassets.com",
+        "els-cdn.com",
+        "scite.ai",
+        "altmetric.com",
+        "springernature.com",
+        "readcube.com",
+        "osano.com",
+        "addtoany.com",
+        "semetricmedia.com"
+      ]
+    }
+  ]
+}
