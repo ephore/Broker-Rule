@@ -3,14 +3,18 @@
   "rules": [
     {
       "domain": [
-        "polymarket.com"
+        "tee.express.magiclabs.com",
+        "polygon-mainnet.g.alchemy.com",
+        "igove4ofv.platform.grcv.io",
+        "eth-mainnet.g.alchemy.com"
       ],
       "domain_suffix": [
         "branch.io",
         "metamask.io",
         "infura.io",
         "hyperliquid.xyz",
-        "polymarket.com"
+        "polymarket.com",
+        "magic.link"
       ],
       "domain_keyword": [
         "polymarket"
