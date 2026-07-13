@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "rules": [
+    {
+      "domain": [
+        "polymarket.com"
+      ],
+      "domain_suffix": [
+        "branch.io",
+        "metamask.io",
+        "infura.io",
+        "hyperliquid.xyz",
+        "polymarket.com"
+      ],
+      "domain_keyword": [
+        "polymarket"
+      ]
+    }
+  ]
+}
