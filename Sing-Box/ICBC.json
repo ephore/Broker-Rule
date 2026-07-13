@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "rules": [
+    {
+      "domain_suffix": [
+        "95588.com",
+        "95588.com.cn",
+        "dccnet.com.cn",
+        "icbc"
+      ],
+      "domain_keyword": [
+        "icbc"
+      ]
+    }
+  ]
+}
