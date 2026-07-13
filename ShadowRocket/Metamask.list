@@ -1,0 +1,7 @@
+# Metamask&Polymarket Ruleset for Shadowrocket
+DOMAIN-SUFFIX,branch.io
+DOMAIN-SUFFIX,metamask.io
+DOMAIN-SUFFIX,infura.io
+DOMAIN-SUFFIX,hyperliquid.xyz
+DOMAIN-SUFFIX,polymarket.com
+DOMAIN-KEYWORD,polymarket
