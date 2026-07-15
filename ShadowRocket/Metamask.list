@@ -4,8 +4,10 @@ DOMAIN-SUFFIX,metamask.io
 DOMAIN-SUFFIX,infura.io
 DOMAIN-SUFFIX,hyperliquid.xyz
 DOMAIN-SUFFIX,polymarket.com
+DOMAIN-SUFFIX,hyperliquid.xyz
 DOMAIN-SUFFIX,magic.link
 DOMAIN-KEYWORD,polymarket
+DOMAIN-KEYWORD,hyperliquid
 DOMAIN,tee.express.magiclabs.com
 DOMAIN,polygon-mainnet.g.alchemy.com
 DOMAIN,igove4ofv.platform.grcv.io
