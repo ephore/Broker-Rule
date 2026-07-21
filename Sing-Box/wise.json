@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "rules": [
+    {
+      "domain": [
+        "muf.app-ads-services.com"
+      ],
+      "domain_suffix": [
+        "transferwise.com",
+        "wise.com",
+        "mixpanel.com",
+        "braze.eu",
+        "singular.net"
+      ]
+    }
+  ]
+}
