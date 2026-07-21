@@ -1,0 +1,36 @@
+{
+  "version": 2,
+  "rules": [
+    {
+      "domain": [
+        "c.go-mpulse.net",
+        "684d0d49.akstat.io"
+      ],
+      "domain_suffix": [
+        "interactivebrokers.com",
+        "ibkr.com",
+        "ibllc.com",
+        "interactivebrokers.ie",
+        "interactivebrokers.ca",
+        "interactivebrokers.eu",
+        "ibkr.ca",
+        "ibkr.eu",
+        "ibkr.ie",
+        "ibkrguides.com",
+        "ibkr.com.au",
+        "ibkr.co.in",
+        "ibkr.co.uk",
+        "interactivebrokers.co.jp",
+        "interactivebrokers.co.uk",
+        "ibkr.com.sg",
+        "interactivebrokers.com.au",
+        "interactivebrokers.com.hk",
+        "interactivebrokers.com.sg",
+        "ibkr.com.hk",
+        "interactivebrokers.co.in",
+        "seekingalpha.com",
+        "tipranks.com"
+      ]
+    }
+  ]
+}
