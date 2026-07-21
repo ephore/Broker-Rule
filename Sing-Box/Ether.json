@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "rules": [
+    {
+      "domain": [
+        "api.eu.amplitude.com",
+        "pulse.walletconnect.com",
+        "api.web3modal.com",
+        "i5jcnk.cdn-settings.appsflyersdk.com",
+        "i5jcnk.launches.appsflyersdk.com",
+        "api.web3modal.org",
+        "pulse.walletconnect.org"
+      ],
+      "domain_suffix": [
+        "ether.fi"
+      ]
+    }
+  ]
+}
