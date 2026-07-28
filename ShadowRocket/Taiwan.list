@@ -1,6 +1,5 @@
 # Merged Ruleset for Shadowrocket
 # Total Rules: 1012
-
 DOMAIN-SUFFIX,madlads.com
 DOMAIN-SUFFIX,backpack.exchange
 DOMAIN-SUFFIX,backpack.app
