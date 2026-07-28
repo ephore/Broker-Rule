@@ -1,0 +1,32 @@
+# Shadowrocket Rule-Set (Combined)
+# UPDATED: 2026-07-28
+
+# Stripe
+DOMAIN-KEYWORD,stripe
+
+# iFAST
+DOMAIN-SUFFIX,ifastgp.com
+DOMAIN-SUFFIX,fundsupermart.com
+DOMAIN-SUFFIX,ifastcorp.com
+DOMAIN-SUFFIX,ifastgb.com
+DOMAIN-SUFFIX,fsmone.com
+DOMAIN-SUFFIX,ifastnetwork.com
+DOMAIN-SUFFIX,ifasttv.com
+DOMAIN-SUFFIX,fsmone.com.hk
+DOMAIN-SUFFIX,fsmone.com.my
+DOMAIN-SUFFIX,ifastcapital.com.my
+DOMAIN-SUFFIX,ifastfinancial.com.hk
+DOMAIN-SUFFIX,ifastfinancial.co.in
+DOMAIN-SUFFIX,ifastgp.com.hk
+DOMAIN-SUFFIX,ifastps.com.cn
+DOMAIN-SUFFIX,zimperium.com
+DOMAIN-SUFFIX,venmo.com
+DOMAIN,secure.fundsupermart.com
+
+# Wise
+DOMAIN-SUFFIX,transferwise.com
+DOMAIN-SUFFIX,wise.com
+DOMAIN-SUFFIX,mixpanel.com
+DOMAIN-SUFFIX,braze.eu
+DOMAIN-SUFFIX,singular.net
+DOMAIN,muf.app-ads-services.com
