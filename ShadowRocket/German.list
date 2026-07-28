@@ -1,0 +1,36 @@
+# Shadowrocket Rule-Set (Combined)
+# UPDATED: 2026-07-28
+
+# N26
+DOMAIN-SUFFIX,n26.com
+DOMAIN-SUFFIX,number26.de
+DOMAIN-SUFFIX,tech26.de
+DOMAIN-SUFFIX,bugsnag.com
+DOMAIN-SUFFIX,usercentrics.eu
+DOMAIN-SUFFIX,prodregistryv2.org
+
+# Kraken
+DOMAIN,sdk.iad-05.braze.com
+DOMAIN,cdn-settings.segment.com
+DOMAIN,asgpkt.cdn-settings.appsflyersdk.com
+DOMAIN,asgpkt.launches.appsflyersdk.com
+DOMAIN,content.ethoca.com
+DOMAIN,kraken.zendesk.com
+DOMAIN-SUFFIX,kraken.com
+DOMAIN-SUFFIX,kraken.onl
+DOMAIN-SUFFIX,statsigapi.net
+DOMAIN-SUFFIX,braze-images.com
+DOMAIN-SUFFIX,nsureapi.com
+DOMAIN-SUFFIX,sardine.ai
+DOMAIN-KEYWORD,s2xiwm.
+
+# Coinbase
+DOMAIN-SUFFIX,coinbase.com
+DOMAIN-SUFFIX,riskified.com
+DOMAIN,riskified.com
+DOMAIN,i3h4gb.cdn-settings.appsflyersdk.com
+DOMAIN,i3h4gb.launches.appsflyersdk.com
+DOMAIN,i3h4gb.inapps.appsflyersdk.com
+DOMAIN,use1-turn.fpjs.io
+DOMAIN,api.sprig.com
+DOMAIN,icanhazip.com
