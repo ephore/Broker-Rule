@@ -63,13 +63,3 @@ payload:
   - 'k41967p8-ios.mobile-messenger.intercom.com'
   - 'nexus-websocket-a.intercom.io'
 
-  # ── 统计 / 追踪（精确匹配）─────────────────────────────
-  #    这几个是第三方埋点/监控，不是业务域名。
-  #    放日本节点=能通；如果你更想直接拦掉，把它们挪到 adblock.yaml 改 REJECT。
-  #    svvzds.launches.appsflyersdk.com  ← AppsFlyer 广告归因
-  #    c.go-mpulse.net / 684d0d49.akstat.io  ← Akamai 性能与访问统计
-  #    6252a508cdfb.qtt-163cdn.com  ← 网易 CDN 资源
-  - 'svvzds.launches.appsflyersdk.com'
-  - 'c.go-mpulse.net'
-  - '684d0d49.akstat.io'
-  - '6252a508cdfb.qtt-163cdn.com'
