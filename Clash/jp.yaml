@@ -5,14 +5,71 @@
 #    '+.example.com'    后缀匹配（含所有子域名）
 #    'target.example'   精确匹配（只这一条）
 #
-#  使用步骤：
-#    1. 在下面的 payload 里添加需要走日本节点的域名
-#    2. 提交后清缓存：
-#       https://purge.jsdelivr.net/gh/ephore/Broker-Rule@main/Clash/jp.yaml
-#    3. 把脚本里 my-jp 相关的两段注释取消掉
-#    4. 仪表盘 → 重启连接
-#
-#  ⚠️ payload 不能为空。空的话 mihomo 会拒绝加载整份配置，
-#     所以脚本里默认不引用本文件，填好域名后再启用。
+#  启用：脚本里取消两处 my-jp 的注释 → 仪表盘重启连接
+#  更新后清缓存：
+#    https://purge.jsdelivr.net/gh/ephore/Broker-Rule@main/Clash/jp.yaml
 # ══════════════════════════════════════════════════════════════
-payload: []
+payload:
+
+  # ── 券商 · Interactive Brokers（含各地域名）──────────────
+  - '+.interactivebrokers.com'
+  - '+.interactivebrokers.ie'
+  - '+.interactivebrokers.ca'
+  - '+.interactivebrokers.eu'
+  - '+.interactivebrokers.co.jp'
+  - '+.interactivebrokers.co.uk'
+  - '+.interactivebrokers.com.au'
+  - '+.interactivebrokers.com.hk'
+  - '+.interactivebrokers.com.sg'
+  - '+.interactivebrokers.co.in'
+  - '+.ibkr.com'
+  - '+.ibkr.ca'
+  - '+.ibkr.eu'
+  - '+.ibkr.ie'
+  - '+.ibkr.com.au'
+  - '+.ibkr.co.in'
+  - '+.ibkr.co.uk'
+  - '+.ibkr.com.sg'
+  - '+.ibkr.com.hk'
+  - '+.ibllc.com'
+  - '+.ibkrguides.com'
+
+  # ── 券商 · Charles Schwab ──────────────────────────────
+  - '+.schwab.com'
+  - '+.schwab.com.hk'
+  - '+.schwab.com.sg'
+  - '+.schwab.co.uk'
+  - '+.schwabassetmanagement.com'
+  - '+.schwabplan.com'
+  - '+.aboutschwab.com'
+
+  # ── 券商 · Firstrade ───────────────────────────────────
+  - '+.firstrade.com'
+  - '+.firstrade.net'
+
+  # ── 行情 / 资讯 ────────────────────────────────────────
+  - '+.benzinga.com'
+  - '+.seekingalpha.com'
+  - '+.tipranks.com'
+  - '+.trefis.com'
+
+  # ── 开发 / 分析工具 ────────────────────────────────────
+  - '+.expo.dev'
+  - '+.posthog.com'
+  - '+.hcaptcha.com'
+  - '+.apptentive.com'
+
+  # ── 客服（Intercom，精确匹配）──────────────────────────
+  - 'k41967p8-ios.mobile-messenger.intercom.com'
+  - 'nexus-websocket-a.intercom.io'
+
+  # ── 统计 / 追踪（精确匹配）─────────────────────────────
+  #    这几个是第三方埋点/监控，不是业务域名。
+  #    放日本节点=能通；如果你更想直接拦掉，把它们挪到 adblock.yaml 改 REJECT。
+  #    svvzds.launches.appsflyersdk.com  ← AppsFlyer 广告归因
+  #    c.go-mpulse.net / 684d0d49.akstat.io  ← Akamai 性能与访问统计
+  #    6252a508cdfb.qtt-163cdn.com  ← 网易 CDN 资源
+  - 'svvzds.launches.appsflyersdk.com'
+  - 'c.go-mpulse.net'
+  - '684d0d49.akstat.io'
+  - '6252a508cdfb.qtt-163cdn.com'
