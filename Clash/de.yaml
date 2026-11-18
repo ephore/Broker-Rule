@@ -1,0 +1,54 @@
+# ══════════════════════════════════════════════════════════════
+#  指定节点分流规则集 · 德国专线
+#
+#  格式：classical（含 DOMAIN-KEYWORD，不能用 domain 格式）
+#    DOMAIN-KEYWORD,s2xiwm.
+#    DOMAIN-SUFFIX,n26.com
+#    DOMAIN,riskified.com
+#
+#  ⚠️ 脚本里 behavior 必须写 "classical"
+#
+#  更新后清缓存：
+#    https://purge.jsdelivr.net/gh/ephore/Broker-Rule@main/Clash/de.yaml
+# ══════════════════════════════════════════════════════════════
+payload:
+
+  # ── N26 / Number26（3 条）
+  - 'DOMAIN-SUFFIX,n26.com'
+  - 'DOMAIN-SUFFIX,number26.de'
+  - 'DOMAIN-SUFFIX,tech26.de'
+
+  # ── Kraken（3 条）
+  - 'DOMAIN,kraken.zendesk.com'
+  - 'DOMAIN-SUFFIX,kraken.com'
+  - 'DOMAIN-SUFFIX,kraken.onl'
+
+  # ── Coinbase（1 条）
+  - 'DOMAIN-SUFFIX,coinbase.com'
+
+  # ── 风控 / 反欺诈（8 条）
+  - 'DOMAIN-SUFFIX,riskified.com'
+  - 'DOMAIN,riskified.com'
+  - 'DOMAIN,use1-turn.fpjs.io'
+  - 'DOMAIN,api.sprig.com'
+  - 'DOMAIN,content.ethoca.com'
+  - 'DOMAIN-SUFFIX,statsigapi.net'
+  - 'DOMAIN-SUFFIX,nsureapi.com'
+  - 'DOMAIN-SUFFIX,sardine.ai'
+
+  # ── 监控 / 推送 / 统计（11 条）
+  - 'DOMAIN-SUFFIX,bugsnag.com'
+  - 'DOMAIN-SUFFIX,usercentrics.eu'
+  - 'DOMAIN,i3h4gb.cdn-settings.appsflyersdk.com'
+  - 'DOMAIN,i3h4gb.launches.appsflyersdk.com'
+  - 'DOMAIN,i3h4gb.inapps.appsflyersdk.com'
+  - 'DOMAIN,icanhazip.com'
+  - 'DOMAIN,sdk.iad-05.braze.com'
+  - 'DOMAIN,cdn-settings.segment.com'
+  - 'DOMAIN,asgpkt.cdn-settings.appsflyersdk.com'
+  - 'DOMAIN,asgpkt.launches.appsflyersdk.com'
+  - 'DOMAIN-SUFFIX,braze-images.com'
+
+  # ── 其他（2 条）
+  - 'DOMAIN-SUFFIX,prodregistryv2.org'
+  - 'DOMAIN-KEYWORD,s2xiwm.'
