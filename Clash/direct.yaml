@@ -52,6 +52,8 @@ payload:
   # IOP
   - '+.iop.org'
   - '+.utppublishing.com'
+  # 智慧树
+  - '+.hybbtree.com'
 
   # ── 精确匹配（15 条）────────────────────────────
   # OUP / SPIE / Hogrefe / 出版社子站
