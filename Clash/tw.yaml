@@ -1,0 +1,117 @@
+# ══════════════════════════════════════════════════════════════
+#  指定节点分流规则集 · 台湾专线
+#
+#  格式：domain（payload 是纯域名，不是完整规则行）
+#    '+.example.com'    后缀匹配（含所有子域名）
+#    'target.example'   精确匹配（只这一条）
+#
+#  ⚠️ 脚本里 behavior 必须写 "domain"
+#
+#  启用：脚本里加上 RULE-SET,my-tw,🇨🇳 台湾专线
+#  更新后清缓存：
+#    https://purge.jsdelivr.net/gh/ephore/Broker-Rule@main/Clash/tw.yaml
+# ══════════════════════════════════════════════════════════════
+payload:
+
+  # ── 交易所 ──────────────────────────────────────────────
+  # Backpack
+  - '+.backpack.exchange'
+  - '+.backpack.app'
+
+  # Binance / BNB
+  - '+.binance.cloud'
+  - '+.binance.com'
+  - '+.binance.me'
+  - '+.binancecnt.com'
+  - '+.binancefuture.com'
+  - '+.bnappzh.co'
+  - '+.bnbstatic.com'
+  - '+.bnbzh.ac'
+  - '+.bntrace.com'
+
+  # OKX
+  - '+.okex.com'
+  - '+.oklink.com'
+  - '+.okx.com'
+
+  # Bitget
+  - '+.bitget.com'
+  - '+.bitgetapp.com'
+  - '+.bitgetapps.com'
+  - '+.abcdstable.com'
+  - '+.krbitget.com'
+
+  # Gate
+  - '+.gate.io'
+  - '+.gateio.im'
+  - '+.gateio.live'
+  - '+.gateio.services'
+  - '+.gatedata.org'
+  - '+.gateimg.com'
+
+  # BitKeep 钱包
+  - '+.bitkeep.com'
+  - '+.bitkeep.app'
+  - '+.bitkeep.vip'
+  - '+.bitkeep.top'
+
+  # ── 其他 ──────────────────────────────────────────────
+  - '+.madlads.com'
+  - '+.gposts.net'
+  - '+.freshmarkethome.com'
+  - '+.saasexch.cc'
+  - '+.saasexch.com'
+  - '+.appsflayer.com'
+
+  # ── 精确匹配（API / CDN / 推送 / 统计）──────────────────
+  - 'assets.eascdn.net'
+  - 'api.iterable.com'
+  - 'backpack-api.xnfts.dev'
+  - 'app.smartappnet.net'
+  - 'app.studiotv.net'
+  - '2qdyzb-cdn-settings.appsflyersdk.com'
+  - 'api-normal-g1.studiotv.net'
+  - 'snssdk.gatedata.org'
+  - 'h5off.airpackapp.com'
+  - '2qdyzb-inapps.appsflyersdk.com'
+  - 'gavatar.staticimgs.com'
+  - 'gimg.staticimgs.com'
+  - 'log.noxiaohao.com'
+  - 'cdn.jjdsn.site'
+  - 'static-web.jjdsn.vip'
+  - 'pushstat.api.engagelab.cc'
+  - 'h1dz7f.launches.appsflyersdk.com'
+  - 'sis.push.theengagelab.com'
+  - 'sis.push.engage7.com'
+  - 'sis.push.engageforce.net'
+  - 'api-app-grpc.wwmxd.fun'
+  - 'api-app-grpc.wwmxd.shop'
+  - 'api-app-grpc.wwmxd.org'
+  - 'api-app-slow.chainnear.com'
+  - 'api-app-slow.bitapi.vip'
+  - 'ant.fluvenkarthon.info'
+  - 'ant.quorbentaxil.cc'
+  - 'ant.zaltrimondex.xyz'
+  - 'ant.vrenthaliox.site'
+  - 'ant.brindovaxel.online'
+  - 'sis-hk.push.engage7.com'
+  - 'sis-hk.push.engageforce.net'
+  - 'sis-hk.push.theengagelab.com'
+  - 'in5pvt-cdn-settings.appsflyersdk.com'
+  - 'in5pvt-launches.appsflyersdk.com'
+  - 'pushstat-hk.engagelab.com'
+  - 'img.gurenla.com'
+  - 'relay.walletconnect.org'
+  - 'conf.chainnear.com'
+  - 'verify.walletconnect.org'
+  - 'newshare.bwb.online'
+  - 'newshare.bwb.global'
+  - 'widgets.marqeta.com'
+  - 'api.onesignal.com'
+  - 'ipyp0a.inapps.appsflyersdk.com'
+  - 'ipyp0a.launches.appsflyersdk.com'
+  - 'vod-license-m.bytepluscdn.com'
+  - 'contendvc.cnouyi.pizza'
+  - 'videocloud-i18n.byteplusvod.com'
+  - 'h64.online-metrix.net'
+  - 'aa.online-metrix.net'
