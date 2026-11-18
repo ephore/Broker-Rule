@@ -1,0 +1,50 @@
+# ══════════════════════════════════════════════════════════════
+#  指定节点分流规则集 · 香港专线
+#
+#  格式：classical（与 adblock/direct 的 domain 格式不同）
+#    DOMAIN-KEYWORD,stripe
+#    DOMAIN-SUFFIX,ifastgp.com
+#    DOMAIN,secure.fundsupermart.com
+#
+#  ⚠️ 本文件是 classical 格式，脚本里 behavior 必须写 "classical"
+#
+#  启用：脚本里取消 my-hk 的注释 → 仪表盘重启连接
+#  更新后清缓存：
+#    https://purge.jsdelivr.net/gh/ephore/Broker-Rule@main/Clash/hk.yaml
+# ══════════════════════════════════════════════════════════════
+payload:
+
+  # ── Stripe（关键词匹配，覆盖所有 stripe 相关域名）─────────
+  - 'DOMAIN-KEYWORD,stripe'
+
+  # ── iFAST 环球／FSMOne ─────────────────────────────────
+  - 'DOMAIN-SUFFIX,ifastgp.com'
+  - 'DOMAIN-SUFFIX,fundsupermart.com'
+  - 'DOMAIN-SUFFIX,ifastcorp.com'
+  - 'DOMAIN-SUFFIX,ifastgb.com'
+  - 'DOMAIN-SUFFIX,fsmone.com'
+  - 'DOMAIN-SUFFIX,ifastnetwork.com'
+  - 'DOMAIN-SUFFIX,ifasttv.com'
+  - 'DOMAIN-SUFFIX,fsmone.com.hk'
+  - 'DOMAIN-SUFFIX,fsmone.com.my'
+  - 'DOMAIN-SUFFIX,ifastcapital.com.my'
+  - 'DOMAIN-SUFFIX,ifastfinancial.com.hk'
+  - 'DOMAIN-SUFFIX,ifastfinancial.co.in'
+  - 'DOMAIN-SUFFIX,ifastgp.com.hk'
+  - 'DOMAIN-SUFFIX,ifastps.com.cn'
+  - 'DOMAIN-SUFFIX,zimperium.com'
+  - 'DOMAIN-SUFFIX,venmo.com'
+  - 'DOMAIN,secure.fundsupermart.com'
+
+  # ── Wise ───────────────────────────────────────────────
+  - 'DOMAIN-SUFFIX,transferwise.com'
+  - 'DOMAIN-SUFFIX,wise.com'
+  - 'DOMAIN-SUFFIX,mixpanel.com'
+  - 'DOMAIN-SUFFIX,braze.eu'
+  - 'DOMAIN-SUFFIX,singular.net'
+
+  # ── 统计 / 追踪（精确匹配）─────────────────────────────
+  #    mixpanel.com / braze.eu / singular.net  ← 第三方埋点
+  #    muf.app-ads-services.com  ← 广告服务
+  #    放香港节点=能通；想直接拦掉就挪到 adblock.yaml 改 REJECT
+  - 'DOMAIN,muf.app-ads-services.com'
