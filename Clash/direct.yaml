@@ -1,0 +1,75 @@
+# 学术出版 / 科研资源 直连规则集
+# 格式：' 开头 = 精确匹配；'+. 开头 = 后缀匹配（含所有子域名）
+# 用途：FlClash / mihomo rule-provider  →  RULE-SET,direct-academic,DIRECT
+payload:
+
+  # ── 后缀匹配（31 条）────────────────────────────
+  # ACS
+  - '+.acs.org'
+  # Wiley
+  - '+.wiley.com'
+  - 'wiley.scienceconnect.io'
+  # Elsevier / ScienceDirect
+  - '+.elsevier.com'
+  - '+.sciencedirect.com'
+  - '+.sciencedirectassets.com'
+  - '+.els-cdn.com'
+  # RSC
+  - '+.rsc.org'
+  # Nature / Springer Nature
+  - '+.nature.com'
+  - '+.springernature.com'
+  - '+.readcube.com'
+  # AAAS Science
+  - '+.science.org'
+  # Springer
+  - '+.springer.com'
+  # Reaxys / CAS
+  - '+.reaxys.com'
+  - '+.cas.org'
+  # Optica
+  - '+.optica.org'
+  # Taylor & Francis
+  - '+.tandfonline.com'
+  # scite
+  - '+.scite.ai'
+  # Altmetric
+  - '+.altmetric.com'
+  # 第三方服务
+  - '+.osano.com'
+  - '+.addtoany.com'
+  - '+.semetricmedia.com'
+  # OUP
+  - '+.oup.com'
+  # 其他出版社
+  - '+.jthjournal.org'
+  - '+.proquest.com'
+  - '+.apa.org'
+  - '+.worldscientific.com'
+  - '+.ametsoc.org'
+  - '+.magonlinelibrary.com'
+  - '+.perfdrive.com'
+  # IOP
+  - '+.iop.org'
+  - '+.utppublishing.com'
+
+  # ── 精确匹配（15 条）────────────────────────────
+  # OUP / SPIE / Hogrefe / 出版社子站
+  - 'academic.oup.com'
+  - 'oup.silverchair-cdn.com'
+  - 'oup2-idp.sams-sigma.com'
+  - 'www.spiedigitallibrary.org'
+  - 'spie.org'
+  - 'econtent.hogrefe.com'
+  - 'www.concrete.org'
+  # Crossref（Crossmark 相关）
+  - 'crossmark.crossref.org'
+  - 'crossmark-cdn.crossref.org'
+  # IOP / SeamlessAccess
+  - 'static.iopscience.com'
+  - 'cdp.iopscience.iop.org'
+  - 'service.seamlessaccess.org'
+  # 其他
+  - 'cdn.pendo.io'
+  - 'wiley-jobs-widget.madgexjb.com'
+  # 注：utppublishing.com 已用后缀覆盖，此处不再重复
