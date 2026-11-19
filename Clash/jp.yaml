@@ -1,65 +1,113 @@
 # ══════════════════════════════════════════════════════════════
-#  指定节点分流规则集 · 日本专线
+#  指定节点分流规则集 · 日本专线（含 Cloudflare）
 #
-#  格式：
-#    '+.example.com'    后缀匹配（含所有子域名）
-#    'target.example'   精确匹配（只这一条）
+#  格式：classical（含 IP-CIDR / IP-CIDR6，不能用 domain 格式）
+#    DOMAIN-SUFFIX,interactivebrokers.com
+#    DOMAIN,target.example.org
+#    IP-CIDR,104.16.0.0/13
 #
-#  启用：脚本里取消两处 my-jp 的注释 → 仪表盘重启连接
+#  ⚠️ 脚本里 my-jp 的 behavior 必须是 "classical"
+#
 #  更新后清缓存：
 #    https://purge.jsdelivr.net/gh/ephore/Broker-Rule@main/Clash/jp.yaml
+#
+#  注意：Cloudflare 的 15 个 IP 段承载全球数百万站点，
+#        全部指向日本节点后，这些站点都会从日本 IP 出去。
 # ══════════════════════════════════════════════════════════════
 payload:
 
-  # ── 券商 · Interactive Brokers（含各地域名）──────────────
-  - '+.interactivebrokers.com'
-  - '+.interactivebrokers.ie'
-  - '+.interactivebrokers.ca'
-  - '+.interactivebrokers.eu'
-  - '+.interactivebrokers.co.jp'
-  - '+.interactivebrokers.co.uk'
-  - '+.interactivebrokers.com.au'
-  - '+.interactivebrokers.com.hk'
-  - '+.interactivebrokers.com.sg'
-  - '+.interactivebrokers.co.in'
-  - '+.ibkr.com'
-  - '+.ibkr.ca'
-  - '+.ibkr.eu'
-  - '+.ibkr.ie'
-  - '+.ibkr.com.au'
-  - '+.ibkr.co.in'
-  - '+.ibkr.co.uk'
-  - '+.ibkr.com.sg'
-  - '+.ibkr.com.hk'
-  - '+.ibllc.com'
-  - '+.ibkrguides.com'
+  # ── 券商 / 开发工具（40 条，原有）────────────────────
+  - 'DOMAIN-SUFFIX,interactivebrokers.com'
+  - 'DOMAIN-SUFFIX,interactivebrokers.ie'
+  - 'DOMAIN-SUFFIX,interactivebrokers.ca'
+  - 'DOMAIN-SUFFIX,interactivebrokers.eu'
+  - 'DOMAIN-SUFFIX,interactivebrokers.co.jp'
+  - 'DOMAIN-SUFFIX,interactivebrokers.co.uk'
+  - 'DOMAIN-SUFFIX,interactivebrokers.com.au'
+  - 'DOMAIN-SUFFIX,interactivebrokers.com.hk'
+  - 'DOMAIN-SUFFIX,interactivebrokers.com.sg'
+  - 'DOMAIN-SUFFIX,interactivebrokers.co.in'
+  - 'DOMAIN-SUFFIX,ibkr.com'
+  - 'DOMAIN-SUFFIX,ibkr.ca'
+  - 'DOMAIN-SUFFIX,ibkr.eu'
+  - 'DOMAIN-SUFFIX,ibkr.ie'
+  - 'DOMAIN-SUFFIX,ibkr.com.au'
+  - 'DOMAIN-SUFFIX,ibkr.co.in'
+  - 'DOMAIN-SUFFIX,ibkr.co.uk'
+  - 'DOMAIN-SUFFIX,ibkr.com.sg'
+  - 'DOMAIN-SUFFIX,ibkr.com.hk'
+  - 'DOMAIN-SUFFIX,ibllc.com'
+  - 'DOMAIN-SUFFIX,ibkrguides.com'
+  - 'DOMAIN-SUFFIX,schwab.com'
+  - 'DOMAIN-SUFFIX,schwab.com.hk'
+  - 'DOMAIN-SUFFIX,schwab.com.sg'
+  - 'DOMAIN-SUFFIX,schwab.co.uk'
+  - 'DOMAIN-SUFFIX,schwabassetmanagement.com'
+  - 'DOMAIN-SUFFIX,schwabplan.com'
+  - 'DOMAIN-SUFFIX,aboutschwab.com'
+  - 'DOMAIN-SUFFIX,firstrade.com'
+  - 'DOMAIN-SUFFIX,firstrade.net'
+  - 'DOMAIN-SUFFIX,benzinga.com'
+  - 'DOMAIN-SUFFIX,seekingalpha.com'
+  - 'DOMAIN-SUFFIX,tipranks.com'
+  - 'DOMAIN-SUFFIX,trefis.com'
+  - 'DOMAIN-SUFFIX,expo.dev'
+  - 'DOMAIN-SUFFIX,posthog.com'
+  - 'DOMAIN-SUFFIX,hcaptcha.com'
+  - 'DOMAIN-SUFFIX,apptentive.com'
+  - 'DOMAIN,k41967p8-ios.mobile-messenger.intercom.com'
+  - 'DOMAIN,nexus-websocket-a.intercom.io'
 
-  # ── 券商 · Charles Schwab ──────────────────────────────
-  - '+.schwab.com'
-  - '+.schwab.com.hk'
-  - '+.schwab.com.sg'
-  - '+.schwab.co.uk'
-  - '+.schwabassetmanagement.com'
-  - '+.schwabplan.com'
-  - '+.aboutschwab.com'
-
-  # ── 券商 · Firstrade ───────────────────────────────────
-  - '+.firstrade.com'
-  - '+.firstrade.net'
-
-  # ── 行情 / 资讯 ────────────────────────────────────────
-  - '+.benzinga.com'
-  - '+.seekingalpha.com'
-  - '+.tipranks.com'
-  - '+.trefis.com'
-
-  # ── 开发 / 分析工具 ────────────────────────────────────
-  - '+.expo.dev'
-  - '+.posthog.com'
-  - '+.hcaptcha.com'
-  - '+.apptentive.com'
-
-  # ── 客服（Intercom，精确匹配）──────────────────────────
-  - 'k41967p8-ios.mobile-messenger.intercom.com'
-  - 'nexus-websocket-a.intercom.io'
-
+  # ── Cloudflare（51 条）──────────────────────────────
+  #    含 challenges.cloudflare.com（安全验证）+ 15 个 Anycast IP 段
+  - 'DOMAIN-SUFFIX,cf-ipfs.com'
+  - 'DOMAIN-SUFFIX,cloudflare-dns.com'
+  - 'DOMAIN-SUFFIX,cloudflare-ipfs.com'
+  - 'DOMAIN-SUFFIX,cloudflare-quic.com'
+  - 'DOMAIN-SUFFIX,cloudflare.com'
+  - 'DOMAIN-SUFFIX,cloudflare.net'
+  - 'DOMAIN-SUFFIX,cloudflare.tv'
+  - 'DOMAIN-SUFFIX,cloudflareaccess.com'
+  - 'DOMAIN-SUFFIX,cloudflareapps.com'
+  - 'DOMAIN-SUFFIX,cloudflarebolt.com'
+  - 'DOMAIN-SUFFIX,cloudflareclient.com'
+  - 'DOMAIN-SUFFIX,cloudflareinsights.com'
+  - 'DOMAIN-SUFFIX,cloudflareok.com'
+  - 'DOMAIN-SUFFIX,cloudflarepreview.com'
+  - 'DOMAIN-SUFFIX,cloudflareresolve.com'
+  - 'DOMAIN-SUFFIX,cloudflaressl.com'
+  - 'DOMAIN-SUFFIX,cloudflarestatus.com'
+  - 'DOMAIN-SUFFIX,cloudflarestorage.com'
+  - 'DOMAIN-SUFFIX,cloudflarestream.com'
+  - 'DOMAIN-SUFFIX,cloudflaretest.com'
+  - 'DOMAIN-SUFFIX,cloudflarewarp.com'
+  - 'DOMAIN-SUFFIX,every1dns.net'
+  - 'DOMAIN-SUFFIX,one.one.one'
+  - 'DOMAIN-SUFFIX,pacloudflare.com'
+  - 'DOMAIN-SUFFIX,pages.dev'
+  - 'DOMAIN-SUFFIX,trycloudflare.com'
+  - 'DOMAIN-SUFFIX,videodelivery.net'
+  - 'DOMAIN-SUFFIX,warp.plus'
+  - 'DOMAIN-SUFFIX,workers.dev'
+  - 'IP-CIDR,103.21.244.0/22'
+  - 'IP-CIDR,103.22.200.0/22'
+  - 'IP-CIDR,103.31.4.0/22'
+  - 'IP-CIDR,104.16.0.0/13'
+  - 'IP-CIDR,104.24.0.0/14'
+  - 'IP-CIDR,108.162.192.0/18'
+  - 'IP-CIDR,131.0.72.0/22'
+  - 'IP-CIDR,141.101.64.0/18'
+  - 'IP-CIDR,162.158.0.0/15'
+  - 'IP-CIDR,172.64.0.0/13'
+  - 'IP-CIDR,173.245.48.0/20'
+  - 'IP-CIDR,188.114.96.0/20'
+  - 'IP-CIDR,190.93.240.0/20'
+  - 'IP-CIDR,197.234.240.0/22'
+  - 'IP-CIDR,198.41.128.0/17'
+  - 'IP-CIDR6,2400:cb00::/32'
+  - 'IP-CIDR6,2405:8100::/32'
+  - 'IP-CIDR6,2405:b500::/32'
+  - 'IP-CIDR6,2606:4700::/32'
+  - 'IP-CIDR6,2803:f800::/32'
+  - 'IP-CIDR6,2a06:98c0::/29'
+  - 'IP-CIDR6,2c0f:f248::/32'
