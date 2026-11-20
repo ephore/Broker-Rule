@@ -2,7 +2,7 @@
 
 与 `Clash/` 目录一一对应，共 **650 条**规则。
 
-| 文件 | 条数 | 目标策略 | 对应 Clash 文件 |
+| 文件 | 条数 | [Rule] 里指定的策略 | 对应 Clash 文件 |
 |---|---|---|---|
 | `adblock.list` | 52 | `REJECT` | Clash/adblock.yaml |
 | `direct.list` | 48 | `DIRECT` | Clash/direct.yaml |
@@ -34,6 +34,11 @@ RULE-SET,https://raw.githubusercontent.com/ephore/Broker-Rule/main/Loon/de.list,
 # 兜底（FINAL 只能写在配置里）
 FINAL,PROXY
 ```
+
+## 策略名写在 [Rule] 里，不在 .list 里
+
+`.list` 文件**只包含规则本身**（`DOMAIN-SUFFIX,x` / `IP-CIDR,x`），不带策略名。
+策略在 `[Rule]` 段的 `RULE-SET,<url>,<策略>` 指定。
 
 ## 必做：在 Loon 里建同名策略
 
