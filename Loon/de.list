@@ -1,28 +1,28 @@
-DOMAIN-SUFFIX,n26.com,🇩🇪 德国专线
-DOMAIN-SUFFIX,number26.de,🇩🇪 德国专线
-DOMAIN-SUFFIX,tech26.de,🇩🇪 德国专线
-DOMAIN,kraken.zendesk.com,🇩🇪 德国专线
-DOMAIN-SUFFIX,kraken.com,🇩🇪 德国专线
-DOMAIN-SUFFIX,kraken.onl,🇩🇪 德国专线
-DOMAIN-SUFFIX,coinbase.com,🇩🇪 德国专线
-DOMAIN-SUFFIX,riskified.com,🇩🇪 德国专线
-DOMAIN,riskified.com,🇩🇪 德国专线
-DOMAIN,use1-turn.fpjs.io,🇩🇪 德国专线
-DOMAIN,api.sprig.com,🇩🇪 德国专线
-DOMAIN,content.ethoca.com,🇩🇪 德国专线
-DOMAIN-SUFFIX,statsigapi.net,🇩🇪 德国专线
-DOMAIN-SUFFIX,nsureapi.com,🇩🇪 德国专线
-DOMAIN-SUFFIX,sardine.ai,🇩🇪 德国专线
-DOMAIN-SUFFIX,bugsnag.com,🇩🇪 德国专线
-DOMAIN-SUFFIX,usercentrics.eu,🇩🇪 德国专线
-DOMAIN,i3h4gb.cdn-settings.appsflyersdk.com,🇩🇪 德国专线
-DOMAIN,i3h4gb.launches.appsflyersdk.com,🇩🇪 德国专线
-DOMAIN,i3h4gb.inapps.appsflyersdk.com,🇩🇪 德国专线
-DOMAIN,icanhazip.com,🇩🇪 德国专线
-DOMAIN,sdk.iad-05.braze.com,🇩🇪 德国专线
-DOMAIN,cdn-settings.segment.com,🇩🇪 德国专线
-DOMAIN,asgpkt.cdn-settings.appsflyersdk.com,🇩🇪 德国专线
-DOMAIN,asgpkt.launches.appsflyersdk.com,🇩🇪 德国专线
-DOMAIN-SUFFIX,braze-images.com,🇩🇪 德国专线
-DOMAIN-SUFFIX,prodregistryv2.org,🇩🇪 德国专线
-DOMAIN-KEYWORD,s2xiwm,🇩🇪 德国专线
+DOMAIN-SUFFIX,n26.com
+DOMAIN-SUFFIX,number26.de
+DOMAIN-SUFFIX,tech26.de
+DOMAIN,kraken.zendesk.com
+DOMAIN-SUFFIX,kraken.com
+DOMAIN-SUFFIX,kraken.onl
+DOMAIN-SUFFIX,coinbase.com
+DOMAIN-SUFFIX,riskified.com
+DOMAIN,riskified.com
+DOMAIN,use1-turn.fpjs.io
+DOMAIN,api.sprig.com
+DOMAIN,content.ethoca.com
+DOMAIN-SUFFIX,statsigapi.net
+DOMAIN-SUFFIX,nsureapi.com
+DOMAIN-SUFFIX,sardine.ai
+DOMAIN-SUFFIX,bugsnag.com
+DOMAIN-SUFFIX,usercentrics.eu
+DOMAIN,i3h4gb.cdn-settings.appsflyersdk.com
+DOMAIN,i3h4gb.launches.appsflyersdk.com
+DOMAIN,i3h4gb.inapps.appsflyersdk.com
+DOMAIN,icanhazip.com
+DOMAIN,sdk.iad-05.braze.com
+DOMAIN,cdn-settings.segment.com
+DOMAIN,asgpkt.cdn-settings.appsflyersdk.com
+DOMAIN,asgpkt.launches.appsflyersdk.com
+DOMAIN-SUFFIX,braze-images.com
+DOMAIN-SUFFIX,prodregistryv2.org
+DOMAIN-KEYWORD,s2xiwm.
