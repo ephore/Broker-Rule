@@ -1,1 +1,68 @@
-IyBMb29uIOWIhua1geinhOWImQoK5LiOIGBDbGFzaC9gIOebruW9leS4gOS4gOWvueW6lO+8jOWFsSAqKjY1MCDmnaEqKuinhOWImeOAggoKfCDmlofku7YgfCDmnaHmlbAgfCDnm67moIfnrZbnlaUgfCDlr7nlupQgQ2xhc2gg5paH5Lu2IHwKfC0tLXwtLS18LS0tfC0tLXwKfCBgYWRibG9jay5saXN0YCB8IDUyIHwgYFJFSkVDVGAgfCBDbGFzaC9hZGJsb2NrLnlhbWwgfAp8IGBkaXJlY3QubGlzdGAgfCA0OCB8IGBESVJFQ1RgIHwgQ2xhc2gvZGlyZWN0LnlhbWwgfAp8IGBqcC5saXN0YCB8IDkxIHwgYPCfh6/wn4e1IOaXpeacrOS4k+e6v2AgfCBDbGFzaC9qcC55YW1s77yI5ZCrIENsb3VkZmxhcmXvvIkgfAp8IGBoay5saXN0YCB8IDI0IHwgYPCfh63wn4ewIOmmmea4r+S4k+e6v2AgfCBDbGFzaC9oay55YW1sIHwKfCBgdHcubGlzdGAgfCA4NiB8IGDwn4eo8J+HsyDlj7Dmub7kuJPnur9gIHwgQ2xhc2gvdHcueWFtbCB8CnwgYHVzLmxpc3RgIHwgMzIxIHwgYPCfh7rwn4e4IOe+juWbveS4k+e6v2AgfCBDbGFzaC91cy55YW1sIHwKfCBgZGUubGlzdGAgfCAyOCB8IGDwn4ep8J+HqiDlvrflm73kuJPnur9gIHwgQ2xhc2gvZGUueWFtbCB8CgojIyDkvb/nlKjmlrnms5UKCuaKiuS4i+mdoui/meauteWKoOWIsCBMb29uIOmFjee9rueahCBgW1J1bGVdYCDmrrXvvIgqKumhuuW6j+S4jeiDveS5sSoq77yM6Ieq5LiK6ICM5LiL5Yy56YWN44CB5ZG95Lit5Y2z5YGc77yJ77yaCgpgYGAKW1J1bGVdCiMg5Y675bm/5ZGK77yI5pyA5YWI5Yy56YWN77yJClJVTEUtU0VULGh0dHBzOi8vcmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbS9lcGhvcmUvQnJva2VyLVJ1bGUvbWFpbi9Mb29uL2FkYmxvY2subGlzdCxSRUpFQ1QKCiMg5a2m5pyv5Ye654mI55u06L+eClJVTEUtU0VULGh0dHBzOi8vcmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbS9lcGhvcmUvQnJva2VyLVJ1bGUvbWFpbi9Mb29uL2RpcmVjdC5saXN0LERJUkVDVAoKIyDliIbljLrkuJPnur/vvIjnrZbnlaXlkI3pnIDkuI4gTG9vbiDphY3nva7kuIDoh7TvvIkKUlVMRS1TRVQsaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2VwaG9yZS9Ccm9rZXItUnVsZS9tYWluL0xvb24vanAubGlzdCzwn4ev8J+HtSDml6XmnKzkuJPnur8KUlVMRS1TRVQsaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2VwaG9yZS9Ccm9rZXItUnVsZS9tYWluL0xvb24vaGsubGlzdCzwn4et8J+HsCDpppnmuK/kuJPnur8KUlVMRS1TRVQsaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2VwaG9yZS9Ccm9rZXItUnVsZS9tYWluL0xvb24vdHcubGlzdCzwn4eo8J+HsyDlj7Dmub7kuJPnur8KUlVMRS1TRVQsaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2VwaG9yZS9Ccm9rZXItUnVsZS9tYWluL0xvb24vdXMubGlzdCzwn4e68J+HuCDnvo7lm73kuJPnur8KUlVMRS1TRVQsaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2VwaG9yZS9Ccm9rZXItUnVsZS9tYWluL0xvb24vZGUubGlzdCzwn4ep8J+HqiDlvrflm73kuJPnur8KCiMg5YWc5bqV77yIRklOQUwg5Y+q6IO95YaZ5Zyo6YWN572u6YeM77yJCkZJTkFMLFBST1hZCmBgYAoKIyMg5b+F5YGa77ya5ZyoIExvb24g6YeM5bu65ZCM5ZCN562W55WlCgpgLmxpc3RgIOmHjOeahOebruagh+etlueVpeWQjeW/hemhu+WSjCBMb29uIOmFjee9rumHjOeahOS4gOiHtO+8jOWQpuWImeinhOWImeS4jeeUn+aViOOAgumcgOimgeW7uu+8mgoKYPCfh6/wn4e1IOaXpeacrOS4k+e6v2DjgIFg8J+HrfCfh7Ag6aaZ5riv5LiT57q/YOOAgWDwn4eo8J+HsyDlj7Dmub7kuJPnur9g44CBYPCfh7rwn4e4IOe+juWbveS4k+e6v2DjgIFg8J+HqfCfh6og5b635Zu95LiT57q/YAoK5oiW6ICF5oqKIGAubGlzdGAg6YeM55qE562W55Wl5ZCN5YWo5bGA5pu/5o2i5oiQ5L2g5bey5pyJ55qE562W55Wl5ZCN44CCCgojIyDkuI4gQ2xhc2gg54mI55qE5beu5byCCgoxLiAqKuaXoCBgcGF5bG9hZDpgIOWMheijhSoqIOKAlOKAlCBMb29uIOeahCBgLmxpc3RgIOavj+ihjOWwseaYr+S4gOadoeinhOWImQoyLiAqKumhuuW6j+WNs+S8mOWFiOe6pyoqIOKAlOKAlCBDbGFzaCDniYjpnaDohJrmnKwgYHByZXBlbmRgIOaPkuWIsOacgOWJje+8m0xvb24g54mI6Z2gIGBbUnVsZV1gIOautemHjOeahOS5puWGmemhuuW6j++8jCoqUlVMRS1TRVQg5b+F6aG75YaZ5Zyo5Y6f5pyJ6KeE5YiZ5LmL5YmNKioKNS4gKipgRklOQUxgIOS4jeiDveWGmei/myAubGlzdCoqIOKAlOKAlCDlj6rog73lhpnlnKjphY3nva7nmoQgYFtSdWxlXWAg5q615pyr5bC+CjUuICoqTG9vbiDmsqHmnInopoblhpnohJrmnKzmnLrliLYqKiDigJTigJQg5pS56KeE5YiZ5Y+q6IO95pS5IGAubGlzdGAg5oiWIGBbUnVsZV1gIOaute+8jOayoeaciSBGbENsYXNoIOmCo+enjSBgbWFpbihjb25maWcpYCDms6jlhaUKCiMjIOi9rOaNouWvueeFpwoKfCBDbGFzaCDlhpnms5UgfCBMb29uIOWGmeazlSB8CnwtLS18LS0tfAp8IGArLmV4YW1wbGUuY29tYO+8iGRvbWFpbiDmoLzlvI/vvIkgfCBgRE9NQUlOLVNVRkZJWCxleGFtcGxlLmNvbSxQT0xJQ1lgIHwKfCBgZXhhbXBsZS5jb21g77yIZG9tYWluIOagvOW8j++8iSB8IGBET01BSU4sZXhhbXBsZS5jb20sUE9MSUNZYCB8CnwgYERPTUFJTi1TVUZGSVgsZXhhbXBsZS5jb21gIHwgYERPTUFJTi1TVUZGSVgsZXhhbXBsZS5jb20sUE9MSUNZYCB8CnwgYERPTUFJTi1LRVlXT1JELHN0cmlwZWAgfCBgRE9NQUlOLUtFWVdPUkQsc3RyaXBlLFBPTElDWWAgfAp8IGBJUC1DSURSLDEuMi4zLjAvMjQsbm8tcmVzb2x2ZWAgfCBgSVAtQ0lEUiwxLjIuMy4wLzI0LFBPTElDWSxuby1yZXNvbHZlYCB8CnwgYFJFSkVDVGAgLyBgRElSRUNUYCB8IOebuOWQjCB8CgojIyDms6jmhI/kuovpobkKCi0gYC5saXN0YCDph4wqKuayoeacieazqOmHiioq77yITG9vbiDlr7nop4TliJnmlofku7bms6jph4rnmoTmlK/mjIHkvp3niYjmnKzogIzlrprvvIzkuLrkv53or4Hop6PmnpDnqLPlrprvvIzms6jph4rnu5/kuIDmlL7mnKwgUkVBRE1F77yJCi0gYGpwLmxpc3RgIOWQqyBDbG91ZGZsYXJlIOeahCAxNSDkuKogSVAg5q61IOKGkiDmiYDmnIkgQ2xvdWRmbGFyZSDnq5nngrnotbDml6XmnKzoioLngrnvvIzms6jmhI/oioLngrnotJ/ovb0KLSDop4TliJnpm4bmmK8qKui/nOeoi+W8leeUqCoq77yM6aaW5qyh5Yqg6L296ZyA6IO96K6/6ZeuIGByYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tYO+8m+iiq+WimeWPr+aNoiBgZmFzdGx5LmpzZGVsaXZyLm5ldGAg6ZWc5YOPCg==
+# Loon 分流规则
+
+与 `Clash/` 目录一一对应，共 **650 条**规则。
+
+| 文件 | 条数 | 目标策略 | 对应 Clash 文件 |
+|---|---|---|---|
+| `adblock.list` | 52 | `REJECT` | Clash/adblock.yaml |
+| `direct.list` | 48 | `DIRECT` | Clash/direct.yaml |
+| `jp.list` | 91 | `🇯🇵 日本专线` | Clash/jp.yaml（含 Cloudflare） |
+| `hk.list` | 24 | `🇭🇰 香港专线` | Clash/hk.yaml |
+| `tw.list` | 86 | `🇨🇳 台湾专线` | Clash/tw.yaml |
+| `us.list` | 321 | `🇺🇸 美国专线` | Clash/us.yaml |
+| `de.list` | 28 | `🇩🇪 德国专线` | Clash/de.yaml |
+
+## 使用方法
+
+把下面这段加到 Loon 配置的 `[Rule]` 段（**顺序不能乱**，自上而下匹配、命中即停）：
+
+```
+[Rule]
+# 去广告（最先匹配）
+RULE-SET,https://raw.githubusercontent.com/ephore/Broker-Rule/main/Loon/adblock.list,REJECT
+
+# 学术出版直连
+RULE-SET,https://raw.githubusercontent.com/ephore/Broker-Rule/main/Loon/direct.list,DIRECT
+
+# 分区专线（策略名需与 Loon 配置一致）
+RULE-SET,https://raw.githubusercontent.com/ephore/Broker-Rule/main/Loon/jp.list,🇯🇵 日本专线
+RULE-SET,https://raw.githubusercontent.com/ephore/Broker-Rule/main/Loon/hk.list,🇭🇰 香港专线
+RULE-SET,https://raw.githubusercontent.com/ephore/Broker-Rule/main/Loon/tw.list,🇨🇳 台湾专线
+RULE-SET,https://raw.githubusercontent.com/ephore/Broker-Rule/main/Loon/us.list,🇺🇸 美国专线
+RULE-SET,https://raw.githubusercontent.com/ephore/Broker-Rule/main/Loon/de.list,🇩🇪 德国专线
+
+# 兜底（FINAL 只能写在配置里）
+FINAL,PROXY
+```
+
+## 必做：在 Loon 里建同名策略
+
+`.list` 里的目标策略名必须和 Loon 配置里的一致，否则规则不生效。需要建：
+
+`🇯🇵 日本专线`、`🇭🇰 香港专线`、`🇨🇳 台湾专线`、`🇺🇸 美国专线`、`🇩🇪 德国专线`
+
+或者把 `.list` 里的策略名全局替换成你已有的策略名。
+
+## 与 Clash 版的差异
+
+1. **无 `payload:` 包装** —— Loon 的 `.list` 每行就是一条规则
+2. **顺序即优先级** —— Clash 版靠脚本 `prepend` 插到最前；Loon 版靠 `[Rule]` 段里的书写顺序，**RULE-SET 必须写在原有规则之前**
+5. **`FINAL` 不能写进 .list** —— 只能写在配置的 `[Rule]` 段末尾
+5. **Loon 没有覆写脚本机制** —— 改规则只能改 `.list` 或 `[Rule]` 段，没有 FlClash 那种 `main(config)` 注入
+
+## 转换对照
+
+| Clash 写法 | Loon 写法 |
+|---|---|
+| `+.example.com`（domain 格式） | `DOMAIN-SUFFIX,example.com,POLICY` |
+| `example.com`（domain 格式） | `DOMAIN,example.com,POLICY` |
+| `DOMAIN-SUFFIX,example.com` | `DOMAIN-SUFFIX,example.com,POLICY` |
+| `DOMAIN-KEYWORD,stripe` | `DOMAIN-KEYWORD,stripe,POLICY` |
+| `IP-CIDR,1.2.3.0/24,no-resolve` | `IP-CIDR,1.2.3.0/24,POLICY,no-resolve` |
+| `REJECT` / `DIRECT` | 相同 |
+
+## 注意事项
+
+- `.list` 里**没有注释**（Loon 对规则文件注释的支持依版本而定，为保证解析稳定，注释统一放本 README）
+- `jp.list` 含 Cloudflare 的 15 个 IP 段 → 所有 Cloudflare 站点走日本节点，注意节点负载
+- 规则集是**远程引用**，首次加载需能访问 `raw.githubusercontent.com`；被墙可换 `fastly.jsdelivr.net` 镜像
