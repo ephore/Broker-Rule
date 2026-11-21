@@ -78,4 +78,5 @@ payload:
   - 'videofile.hybbtree.com'
   - 'rscj.silverchair-cdn.com'
   - 'assets.aaas.org'
+  - 'acs.silverchair-cdn.com'
   # 注：utppublishing.com 已用后缀覆盖，此处不再重复
