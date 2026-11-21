@@ -49,6 +49,7 @@ payload:
   - '+.ametsoc.org'
   - '+.magonlinelibrary.com'
   - '+.perfdrive.com'
+  - '+.crossref.org'
   # IOP
   - '+.iop.org'
   - '+.utppublishing.com'
