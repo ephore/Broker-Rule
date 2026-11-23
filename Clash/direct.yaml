@@ -50,6 +50,7 @@ payload:
   - '+.magonlinelibrary.com'
   - '+.perfdrive.com'
   - '+.crossref.org'
+  - '+.thieme-connect.de'
   # IOP
   - '+.iop.org'
   - '+.utppublishing.com'
