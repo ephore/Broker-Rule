@@ -1,6 +1,4 @@
 # Broker Ruleset for Shadowrocket
-DOMAIN-SUFFIX,9oju31.launches.appsflyersdk.com
-DOMAIN-SUFFIX,sgqt0j.launches.appsflyersdk.com
 DOMAIN-SUFFIX,shortconn.im.qcloud.com
 DOMAIN-SUFFIX,futuhk.com
 DOMAIN-SUFFIX,futu.link
@@ -72,9 +70,6 @@ DOMAIN-SUFFIX,tigerbrokers.net
 DOMAIN-SUFFIX,tigerbrokers.nz
 DOMAIN-SUFFIX,zr.hk
 DOMAIN-SUFFIX,usmartsg.com
-DOMAIN,yvdfuy.cdn-settings.appsflyersdk.com
-DOMAIN,yvdfuy.launches.appsflyersdk.com
-DOMAIN,yvdfuy.inapps.appsflyersdk.com
 DOMAIN,cg.play-analytics.com
 DOMAIN,cdn.futustatic.com
 DOMAIN,qtcard.futunn.com
