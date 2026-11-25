@@ -1,5 +1,4 @@
 # Binance Ruleset for Shadowrocket
-DOMAIN-SUFFIX,appsflayer.com
 DOMAIN-SUFFIX,binance.cloud
 DOMAIN-SUFFIX,binance.com
 DOMAIN-SUFFIX,binance.me
