@@ -38,18 +38,15 @@ DOMAIN,api.iterable.com
 DOMAIN,backpack-api.xnfts.dev
 DOMAIN,app.smartappnet.net
 DOMAIN,app.studiotv.net
-DOMAIN,2qdyzb-cdn-settings.appsflyersdk.com
 DOMAIN,api-normal-g1.studiotv.net
 DOMAIN,snssdk.gatedata.org
 DOMAIN,h5off.airpackapp.com
-DOMAIN,2qdyzb-inapps.appsflyersdk.com
 DOMAIN,gavatar.staticimgs.com
 DOMAIN,gimg.staticimgs.com
 DOMAIN,log.noxiaohao.com
 DOMAIN,cdn.jjdsn.site
 DOMAIN,static-web.jjdsn.vip
 DOMAIN,pushstat.api.engagelab.cc
-DOMAIN,h1dz7f.launches.appsflyersdk.com
 DOMAIN,sis.push.theengagelab.com
 DOMAIN,sis.push.engage7.com
 DOMAIN,sis.push.engageforce.net
@@ -66,8 +63,6 @@ DOMAIN,ant.brindovaxel.online
 DOMAIN,sis-hk.push.engage7.com
 DOMAIN,sis-hk.push.engageforce.net
 DOMAIN,sis-hk.push.theengagelab.com
-DOMAIN,in5pvt-cdn-settings.appsflyersdk.com
-DOMAIN,in5pvt-launches.appsflyersdk.com
 DOMAIN,pushstat-hk.engagelab.com
 DOMAIN,img.gurenla.com
 DOMAIN,relay.walletconnect.org
@@ -77,8 +72,6 @@ DOMAIN,newshare.bwb.online
 DOMAIN,newshare.bwb.global
 DOMAIN,widgets.marqeta.com
 DOMAIN,api.onesignal.com
-DOMAIN,ipyp0a.inapps.appsflyersdk.com
-DOMAIN,ipyp0a.launches.appsflyersdk.com
 DOMAIN,vod-license-m.bytepluscdn.com
 DOMAIN,contendvc.cnouyi.pizza
 DOMAIN,videocloud-i18n.byteplusvod.com
