@@ -1,117 +1,113 @@
 # ══════════════════════════════════════════════════════════════
 #  指定节点分流规则集 · 台湾专线
 #
-#  格式：domain（payload 是纯域名，不是完整规则行）
-#    '+.example.com'    后缀匹配（含所有子域名）
-#    'target.example'   精确匹配（只这一条）
+#  格式：classical（与 adblock/direct 的 domain 格式不同）
+#    DOMAIN-SUFFIX,binance.com
+#    DOMAIN,relay.walletconnect.org
 #
-#  ⚠️ 脚本里 behavior 必须写 "domain"
+#  ⚠️ 脚本里 behavior 必须写 "classical"
 #
-#  启用：脚本里加上 RULE-SET,my-tw,🇨🇳 台湾专线
 #  更新后清缓存：
 #    https://purge.jsdelivr.net/gh/ephore/Broker-Rule@main/Clash/tw.yaml
 # ══════════════════════════════════════════════════════════════
 payload:
 
-  # ── 交易所 ──────────────────────────────────────────────
-  # Backpack
-  - '+.backpack.exchange'
-  - '+.backpack.app'
+  # ── 交易所 / 钱包 App（Binance / OKX / Bitget / Gate / BitKeep）（34 条）
+  - 'DOMAIN-SUFFIX,backpack.exchange'
+  - 'DOMAIN-SUFFIX,backpack.app'
+  - 'DOMAIN-SUFFIX,binance.cloud'
+  - 'DOMAIN-SUFFIX,binance.com'
+  - 'DOMAIN-SUFFIX,binance.me'
+  - 'DOMAIN-SUFFIX,binancecnt.com'
+  - 'DOMAIN-SUFFIX,binancefuture.com'
+  - 'DOMAIN-SUFFIX,bnappzh.co'
+  - 'DOMAIN-SUFFIX,bnbstatic.com'
+  - 'DOMAIN-SUFFIX,bnbzh.ac'
+  - 'DOMAIN-SUFFIX,bntrace.com'
+  - 'DOMAIN-SUFFIX,okex.com'
+  - 'DOMAIN-SUFFIX,oklink.com'
+  - 'DOMAIN-SUFFIX,okx.com'
+  - 'DOMAIN-SUFFIX,bitget.com'
+  - 'DOMAIN-SUFFIX,bitgetapp.com'
+  - 'DOMAIN-SUFFIX,bitgetapps.com'
+  - 'DOMAIN-SUFFIX,abcdstable.com'
+  - 'DOMAIN-SUFFIX,krbitget.com'
+  - 'DOMAIN-SUFFIX,gate.io'
+  - 'DOMAIN-SUFFIX,gateio.im'
+  - 'DOMAIN-SUFFIX,gateio.live'
+  - 'DOMAIN-SUFFIX,gateio.services'
+  - 'DOMAIN-SUFFIX,gatedata.org'
+  - 'DOMAIN-SUFFIX,gateimg.com'
+  - 'DOMAIN-SUFFIX,bitkeep.com'
+  - 'DOMAIN-SUFFIX,bitkeep.app'
+  - 'DOMAIN-SUFFIX,bitkeep.vip'
+  - 'DOMAIN-SUFFIX,bitkeep.top'
+  - 'DOMAIN-SUFFIX,madlads.com'
+  - 'DOMAIN-SUFFIX,gposts.net'
+  - 'DOMAIN-SUFFIX,freshmarkethome.com'
+  - 'DOMAIN-SUFFIX,saasexch.cc'
+  - 'DOMAIN-SUFFIX,saasexch.com'
 
-  # Binance / BNB
-  - '+.binance.cloud'
-  - '+.binance.com'
-  - '+.binance.me'
-  - '+.binancecnt.com'
-  - '+.binancefuture.com'
-  - '+.bnappzh.co'
-  - '+.bnbstatic.com'
-  - '+.bnbzh.ac'
-  - '+.bntrace.com'
+  # ── CDN（1 条）
+  - 'DOMAIN,assets.eascdn.net'
 
-  # OKX
-  - '+.okex.com'
-  - '+.oklink.com'
-  - '+.okx.com'
+  # ── 埋点 / 推送 SDK（1 条）
+  - 'DOMAIN,api.iterable.com'
 
-  # Bitget
-  - '+.bitget.com'
-  - '+.bitgetapp.com'
-  - '+.bitgetapps.com'
-  - '+.abcdstable.com'
-  - '+.krbitget.com'
+  # ── 钱包与后端 API（1 条）
+  - 'DOMAIN,backpack-api.xnfts.dev'
 
-  # Gate
-  - '+.gate.io'
-  - '+.gateio.im'
-  - '+.gateio.live'
-  - '+.gateio.services'
-  - '+.gatedata.org'
-  - '+.gateimg.com'
+  # ── 应用内 WebView / 落地页（4 条）
+  - 'DOMAIN,app.smartappnet.net'
+  - 'DOMAIN,app.studiotv.net'
+  - 'DOMAIN,api-normal-g1.studiotv.net'
+  - 'DOMAIN,snssdk.gatedata.org'
 
-  # BitKeep 钱包
-  - '+.bitkeep.com'
-  - '+.bitkeep.app'
-  - '+.bitkeep.vip'
-  - '+.bitkeep.top'
+  # ── 统计 / 推送基础设施（10 条）
+  - 'DOMAIN,h5off.airpackapp.com'
+  - 'DOMAIN,gavatar.staticimgs.com'
+  - 'DOMAIN,gimg.staticimgs.com'
+  - 'DOMAIN,log.noxiaohao.com'
+  - 'DOMAIN,cdn.jjdsn.site'
+  - 'DOMAIN,static-web.jjdsn.vip'
+  - 'DOMAIN,pushstat.api.engagelab.cc'
+  - 'DOMAIN,sis.push.theengagelab.com'
+  - 'DOMAIN,sis.push.engage7.com'
+  - 'DOMAIN,sis.push.engageforce.net'
 
-  # ── 其他 ──────────────────────────────────────────────
-  - '+.madlads.com'
-  - '+.gposts.net'
-  - '+.freshmarkethome.com'
-  - '+.saasexch.cc'
-  - '+.saasexch.com'
-  - '+.appsflayer.com'
+  # ── 链上 RPC 与轻服务（5 条）
+  - 'DOMAIN,api-app-grpc.wwmxd.fun'
+  - 'DOMAIN,api-app-grpc.wwmxd.shop'
+  - 'DOMAIN,api-app-grpc.wwmxd.org'
+  - 'DOMAIN,api-app-slow.chainnear.com'
+  - 'DOMAIN,api-app-slow.bitapi.vip'
 
-  # ── 精确匹配（API / CDN / 推送 / 统计）──────────────────
-  - 'assets.eascdn.net'
-  - 'api.iterable.com'
-  - 'backpack-api.xnfts.dev'
-  - 'app.smartappnet.net'
-  - 'app.studiotv.net'
-  - '2qdyzb-cdn-settings.appsflyersdk.com'
-  - 'api-normal-g1.studiotv.net'
-  - 'snssdk.gatedata.org'
-  - 'h5off.airpackapp.com'
-  - '2qdyzb-inapps.appsflyersdk.com'
-  - 'gavatar.staticimgs.com'
-  - 'gimg.staticimgs.com'
-  - 'log.noxiaohao.com'
-  - 'cdn.jjdsn.site'
-  - 'static-web.jjdsn.vip'
-  - 'pushstat.api.engagelab.cc'
-  - 'h1dz7f.launches.appsflyersdk.com'
-  - 'sis.push.theengagelab.com'
-  - 'sis.push.engage7.com'
-  - 'sis.push.engageforce.net'
-  - 'api-app-grpc.wwmxd.fun'
-  - 'api-app-grpc.wwmxd.shop'
-  - 'api-app-grpc.wwmxd.org'
-  - 'api-app-slow.chainnear.com'
-  - 'api-app-slow.bitapi.vip'
-  - 'ant.fluvenkarthon.info'
-  - 'ant.quorbentaxil.cc'
-  - 'ant.zaltrimondex.xyz'
-  - 'ant.vrenthaliox.site'
-  - 'ant.brindovaxel.online'
-  - 'sis-hk.push.engage7.com'
-  - 'sis-hk.push.engageforce.net'
-  - 'sis-hk.push.theengagelab.com'
-  - 'in5pvt-cdn-settings.appsflyersdk.com'
-  - 'in5pvt-launches.appsflyersdk.com'
-  - 'pushstat-hk.engagelab.com'
-  - 'img.gurenla.com'
-  - 'relay.walletconnect.org'
-  - 'conf.chainnear.com'
-  - 'verify.walletconnect.org'
-  - 'newshare.bwb.online'
-  - 'newshare.bwb.global'
-  - 'widgets.marqeta.com'
-  - 'api.onesignal.com'
-  - 'ipyp0a.inapps.appsflyersdk.com'
-  - 'ipyp0a.launches.appsflyersdk.com'
-  - 'vod-license-m.bytepluscdn.com'
-  - 'contendvc.cnouyi.pizza'
-  - 'videocloud-i18n.byteplusvod.com'
-  - 'h64.online-metrix.net'
-  - 'aa.online-metrix.net'
+  # ── 第三方域名（伪装/短链）（5 条）
+  - 'DOMAIN,ant.fluvenkarthon.info'
+  - 'DOMAIN,ant.quorbentaxil.cc'
+  - 'DOMAIN,ant.zaltrimondex.xyz'
+  - 'DOMAIN,ant.vrenthaliox.site'
+  - 'DOMAIN,ant.brindovaxel.online'
+
+  # ── 推送（香港节点）（4 条）
+  - 'DOMAIN,sis-hk.push.engage7.com'
+  - 'DOMAIN,sis-hk.push.engageforce.net'
+  - 'DOMAIN,sis-hk.push.theengagelab.com'
+  - 'DOMAIN,pushstat-hk.engagelab.com'
+
+  # ── 钱包连接与组件（11 条）
+  - 'DOMAIN,img.gurenla.com'
+  - 'DOMAIN,relay.walletconnect.org'
+  - 'DOMAIN,conf.chainnear.com'
+  - 'DOMAIN,verify.walletconnect.org'
+  - 'DOMAIN,newshare.bwb.online'
+  - 'DOMAIN,newshare.bwb.global'
+  - 'DOMAIN,widgets.marqeta.com'
+  - 'DOMAIN,api.onesignal.com'
+  - 'DOMAIN,vod-license-m.bytepluscdn.com'
+  - 'DOMAIN,contendvc.cnouyi.pizza'
+  - 'DOMAIN,videocloud-i18n.byteplusvod.com'
+
+  # ── 视频 / 风控指纹（2 条）
+  - 'DOMAIN,h64.online-metrix.net'
+  - 'DOMAIN,aa.online-metrix.net'
