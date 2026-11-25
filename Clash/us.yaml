@@ -12,7 +12,7 @@
 # ══════════════════════════════════════════════════════════════
 payload:
 
-  # ── AT&T（42 条）────────────────────────────────────
+  # ── AT&T（42 条）
   - '+.accbusiness.com'
   - '+.atandt.com'
   - '+.att-bundles.com'
@@ -56,7 +56,7 @@ payload:
   - '+.currently.com'
   - '+.currently.net'
 
-  # ── DIRECTV / AT&T 旗下（93 条）───────────────────────
+  # ── DIRECTV / AT&T 旗下（93 条）
   - '+.directvbusinessmarket.com'
   - '+.enterprisepaging.com'
   - '+.itcanwait.com'
@@ -151,7 +151,7 @@ payload:
   - '+.att.cn'
   - '+.attcorp.cn'
 
-  # ── Yahoo / Flickr（177 条）─────────────────────────
+  # ── Yahoo / Flickr（174 条）
   - '+.yahoo'
   - '+.flickr'
   - '+.yahoo.ru'
@@ -326,11 +326,8 @@ payload:
   - '+.yahoo.co.ao'
   - '+.yahoo.cn'
   - '+.yahoo.com.cn'
-  - '+.ads.yahoo.com'
-  - '+.gemini.yahoo.com'
-  - '+.ysm.yahoo.com'
 
-  # ── Reddit（8 条）──────────────────────────────
+  # ── Reddit（8 条）
   - '+.redd.it'
   - '+.reddit.com'
   - '+.redditmail.com'
@@ -340,5 +337,5 @@ payload:
   - '+.reddituploads.com.cdn-cf.behance.net'
   - '+.reddituploads.com.cdn-cf.dropbox.com'
 
-  # ── 精确匹配 ──────────────────────────────────────────
+  # ── 精确匹配
   - 'cdn.js7k.com'
