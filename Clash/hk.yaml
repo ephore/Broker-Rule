@@ -48,3 +48,8 @@ payload:
   #    muf.app-ads-services.com  ← 广告服务
   #    放香港节点=能通；想直接拦掉就挪到 adblock.yaml 改 REJECT
   - 'DOMAIN,muf.app-ads-services.com'
+
+  # ── Ethena Pay（主 API / 官网）──────────────────────────
+  - 'DOMAIN-SUFFIX,ethenapay-api.co'
+  - 'DOMAIN-SUFFIX,ethenapay.co'
+  - 'DOMAIN-SUFFIX,ethena.fi'
