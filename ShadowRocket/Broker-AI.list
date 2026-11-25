@@ -1,6 +1,4 @@
 # Merged Ruleset for Shadowrocket: Broker & AI
-DOMAIN-SUFFIX,9oju31.launches.appsflyersdk.com
-DOMAIN-SUFFIX,sgqt0j.launches.appsflyersdk.com
 DOMAIN-SUFFIX,shortconn.im.qcloud.com
 DOMAIN-SUFFIX,futuhk.com
 DOMAIN-SUFFIX,futu.link
@@ -72,9 +70,6 @@ DOMAIN-SUFFIX,tigerbrokers.net
 DOMAIN-SUFFIX,tigerbrokers.nz
 DOMAIN-SUFFIX,zr.hk
 DOMAIN-SUFFIX,usmartsg.com
-DOMAIN,yvdfuy.cdn-settings.appsflyersdk.com
-DOMAIN,yvdfuy.launches.appsflyersdk.com
-DOMAIN,yvdfuy.inapps.appsflyersdk.com
 DOMAIN,cg.play-analytics.com
 DOMAIN,cdn.futustatic.com
 DOMAIN,qtcard.futunn.com
@@ -237,7 +232,6 @@ DOMAIN-SUFFIX,hcaptcha.com
 DOMAIN-SUFFIX,benzinga.com
 DOMAIN,k41967p8-ios.mobile-messenger.intercom.com
 DOMAIN,nexus-websocket-a.intercom.io
-DOMAIN,svvzds.launches.appsflyersdk.com
 DOMAIN,6252a508cdfb.qtt-163cdn.com
 DOMAIN,ai.google.dev
 DOMAIN,alkalimakersuite-pa.clients6.google.com
@@ -284,7 +278,6 @@ DOMAIN-SUFFIX,androidtv.com
 DOMAIN-SUFFIX,angulardart.org
 DOMAIN-SUFFIX,api.ai
 DOMAIN-SUFFIX,apigee.com
-DOMAIN-SUFFIX,app-analytics-services.com
 DOMAIN-SUFFIX,app-measurement-cn.com
 DOMAIN-SUFFIX,app-measurement.com
 DOMAIN-SUFFIX,app-measurement.net
@@ -423,7 +416,6 @@ DOMAIN-SUFFIX,cookiechoices.org
 DOMAIN-SUFFIX,coova.com
 DOMAIN-SUFFIX,coova.net
 DOMAIN-SUFFIX,coova.org
-DOMAIN-SUFFIX,crashlytics.com
 DOMAIN-SUFFIX,crbug.com
 DOMAIN-SUFFIX,creativelab5.com
 DOMAIN-SUFFIX,crossmediapanel.com
@@ -1000,7 +992,6 @@ DOMAIN-SUFFIX,observeit.net
 DOMAIN-SUFFIX,openai.com
 DOMAIN-SUFFIX,openaiapi-site.azureedge.net
 DOMAIN-SUFFIX,openaicom.imgix.net
-DOMAIN-SUFFIX,segment.io
 DOMAIN-SUFFIX,sentry.io
 DOMAIN-SUFFIX,stripe.com
 DOMAIN-SUFFIX,turn.livekit.cloud
