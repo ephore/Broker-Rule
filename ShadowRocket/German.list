@@ -10,16 +10,11 @@ DOMAIN-SUFFIX,usercentrics.eu
 DOMAIN-SUFFIX,prodregistryv2.org
 
 # Kraken
-DOMAIN,sdk.iad-05.braze.com
-DOMAIN,cdn-settings.segment.com
-DOMAIN,asgpkt.cdn-settings.appsflyersdk.com
-DOMAIN,asgpkt.launches.appsflyersdk.com
 DOMAIN,content.ethoca.com
 DOMAIN,kraken.zendesk.com
 DOMAIN-SUFFIX,kraken.com
 DOMAIN-SUFFIX,kraken.onl
 DOMAIN-SUFFIX,statsigapi.net
-DOMAIN-SUFFIX,braze-images.com
 DOMAIN-SUFFIX,nsureapi.com
 DOMAIN-SUFFIX,sardine.ai
 DOMAIN-KEYWORD,s2xiwm.
@@ -28,19 +23,13 @@ DOMAIN-KEYWORD,s2xiwm.
 DOMAIN-SUFFIX,coinbase.com
 DOMAIN-SUFFIX,riskified.com
 DOMAIN,riskified.com
-DOMAIN,i3h4gb.cdn-settings.appsflyersdk.com
-DOMAIN,i3h4gb.launches.appsflyersdk.com
-DOMAIN,i3h4gb.inapps.appsflyersdk.com
 DOMAIN,use1-turn.fpjs.io
 DOMAIN,api.sprig.com
 DOMAIN,icanhazip.com
 
 # Ether
 DOMAIN-SUFFIX,ether.fi
-DOMAIN,api.eu.amplitude.com
 DOMAIN,pulse.walletconnect.com
 DOMAIN,api.web3modal.com
-DOMAIN,i5jcnk.cdn-settings.appsflyersdk.com
-DOMAIN,i5jcnk.launches.appsflyersdk.com
 DOMAIN,api.web3modal.org
 DOMAIN,pulse.walletconnect.org
