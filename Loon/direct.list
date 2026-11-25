@@ -28,6 +28,8 @@ DOMAIN-SUFFIX,worldscientific.com
 DOMAIN-SUFFIX,ametsoc.org
 DOMAIN-SUFFIX,magonlinelibrary.com
 DOMAIN-SUFFIX,perfdrive.com
+DOMAIN-SUFFIX,crossref.org
+DOMAIN-SUFFIX,thieme-connect.de
 DOMAIN-SUFFIX,iop.org
 DOMAIN-SUFFIX,utppublishing.com
 DOMAIN-SUFFIX,hybbtree.com
@@ -46,3 +48,6 @@ DOMAIN,service.seamlessaccess.org
 DOMAIN,cdn.pendo.io
 DOMAIN,wiley-jobs-widget.madgexjb.com
 DOMAIN,videofile.hybbtree.com
+DOMAIN,rscj.silverchair-cdn.com
+DOMAIN,assets.aaas.org
+DOMAIN,acs.silverchair-cdn.com
