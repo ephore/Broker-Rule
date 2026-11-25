@@ -6,19 +6,21 @@
 #    DOMAIN-SUFFIX,ifastgp.com
 #    DOMAIN,secure.fundsupermart.com
 #
-#  ⚠️ 本文件是 classical 格式，脚本里 behavior 必须写 "classical"
-#
 #  启用：脚本里取消 my-hk 的注释 → 仪表盘重启连接
+#
+#  ⚠️ 脚本里 behavior 必须写 "classical"
+#
 #  更新后清缓存：
 #    https://purge.jsdelivr.net/gh/ephore/Broker-Rule@main/Clash/hk.yaml
 # ══════════════════════════════════════════════════════════════
 payload:
 
-  # ── Stripe（关键词匹配，覆盖所有 stripe 相关域名）─────────
+  # ── Stripe（关键词匹配，覆盖所有 stripe 相关域名）（1 条）
   - 'DOMAIN-KEYWORD,stripe'
 
-  # ── iFAST 环球／FSMOne ─────────────────────────────────
+  # ── iFAST 环球／FSMOne（15 条）
   - 'DOMAIN-SUFFIX,ifastgp.com'
+  - 'DOMAIN-SUFFIX,fundsupermart.com'
   - 'DOMAIN-SUFFIX,ifastcorp.com'
   - 'DOMAIN-SUFFIX,ifastgb.com'
   - 'DOMAIN-SUFFIX,fsmone.com'
@@ -32,22 +34,21 @@ payload:
   - 'DOMAIN-SUFFIX,ifastgp.com.hk'
   - 'DOMAIN-SUFFIX,ifastps.com.cn'
   - 'DOMAIN-SUFFIX,zimperium.com'
+
+  # ── Wise / Venmo（1 条）
   - 'DOMAIN-SUFFIX,venmo.com'
 
-  # ── Wise ───────────────────────────────────────────────
+  # ── iFAST 精确匹配（1 条）
+  - 'DOMAIN,secure.fundsupermart.com'
+
+  # ── Wise（2 条）
   - 'DOMAIN-SUFFIX,transferwise.com'
   - 'DOMAIN-SUFFIX,wise.com'
-  - 'DOMAIN-SUFFIX,mixpanel.com'
-  - 'DOMAIN-SUFFIX,braze.eu'
-  - 'DOMAIN-SUFFIX,singular.net'
 
-  # ── 统计 / 追踪（精确匹配）─────────────────────────────
-  #    mixpanel.com / braze.eu / singular.net  ← 第三方埋点
-  #    muf.app-ads-services.com  ← 广告服务
-  #    放香港节点=能通；想直接拦掉就挪到 adblock.yaml 改 REJECT
+  # ── 统计 / 追踪（精确匹配）（1 条）
   - 'DOMAIN,muf.app-ads-services.com'
 
-  # ── Ethena Pay（主 API / 官网）──────────────────────────
+  # ── Ethena Pay（主 API / 官网）（3 条）
   - 'DOMAIN-SUFFIX,ethenapay-api.co'
   - 'DOMAIN-SUFFIX,ethenapay.co'
   - 'DOMAIN-SUFFIX,ethena.fi'
