@@ -3,8 +3,6 @@
   "rules": [
     {
       "domain": [
-        "2qdyzb-cdn-settings.appsflyersdk.com",
-        "2qdyzb-inapps.appsflyersdk.com",
         "api-normal-g1.studiotv.net",
         "api.iterable.com",
         "app.smartappnet.net",
