@@ -3,15 +3,10 @@
   "rules": [
     {
       "domain": [
-        "asgpkt.cdn-settings.appsflyersdk.com",
-        "asgpkt.launches.appsflyersdk.com",
-        "cdn-settings.segment.com",
         "content.ethoca.com",
-        "kraken.zendesk.com",
-        "sdk.iad-05.braze.com"
+        "kraken.zendesk.com"
       ],
       "domain_suffix": [
-        "braze-images.com",
         "kraken.com",
         "kraken.onl",
         "nsureapi.com",
