@@ -2,7 +2,7 @@
 #  指定节点分流规则集 · 德国专线
 #
 #  格式：classical（含 DOMAIN-KEYWORD，不能用 domain 格式）
-#    DOMAIN-KEYWORD,s2xiwm.
+#    DOMAIN-KEYWORD,s2xiwm
 #    DOMAIN-SUFFIX,n26.com
 #    DOMAIN,riskified.com
 #
@@ -28,27 +28,20 @@ payload:
 
   # ── 风控 / 反欺诈（8 条）
   - 'DOMAIN-SUFFIX,riskified.com'
-  - 'DOMAIN,riskified.com'
   - 'DOMAIN,use1-turn.fpjs.io'
   - 'DOMAIN,api.sprig.com'
   - 'DOMAIN,content.ethoca.com'
   - 'DOMAIN-SUFFIX,statsigapi.net'
   - 'DOMAIN-SUFFIX,nsureapi.com'
   - 'DOMAIN-SUFFIX,sardine.ai'
-
-  # ── 监控 / 推送 / 统计（11 条）
   - 'DOMAIN-SUFFIX,bugsnag.com'
+
+  # ── 监控 / 推送 / 统计（5 条）
   - 'DOMAIN-SUFFIX,usercentrics.eu'
-  - 'DOMAIN,i3h4gb.cdn-settings.appsflyersdk.com'
-  - 'DOMAIN,i3h4gb.launches.appsflyersdk.com'
-  - 'DOMAIN,i3h4gb.inapps.appsflyersdk.com'
-  - 'DOMAIN,icanhazip.com'
   - 'DOMAIN,sdk.iad-05.braze.com'
   - 'DOMAIN,cdn-settings.segment.com'
-  - 'DOMAIN,asgpkt.cdn-settings.appsflyersdk.com'
-  - 'DOMAIN,asgpkt.launches.appsflyersdk.com'
   - 'DOMAIN-SUFFIX,braze-images.com'
-
-  # ── 其他（2 条）
   - 'DOMAIN-SUFFIX,prodregistryv2.org'
-  - 'DOMAIN-KEYWORD,s2xiwm.'
+
+  # ── 其他（1 条）
+  - 'DOMAIN-KEYWORD,s2xiwm'
