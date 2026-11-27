@@ -1,5 +1,5 @@
 # ══════════════════════════════════════════════════════════════
-#  指定节点分流规则集 · 东南亚专线（Polymarket + Hyperliquid + PolyEase）
+#  指定节点分流规则集 · 东南亚专线（Polymarket + Hyperliquid + PolyEase + predict.fun）
 #
 #  格式：classical（与 adblock/direct 的 domain 格式不同）
 #    DOMAIN-SUFFIX,polymarket.com
@@ -14,6 +14,7 @@
 #    · Polymarket  —— 44 条（kr.yaml 已于 2026-11 清空，规则只保留在本文件）
 #    · Hyperliquid —— 20 条（永续 DEX：API/WS/RPC/桥/钱包登录依赖）
 #    · PolyEase    ——  2 条（第三方图表站，行情直连 Hyperliquid 官方域名）
+#    · predict.fun ——  6 条（BNB 链预测市场：GraphQL / WS / 静态资源 / 登录）
 #  挂载：RULE-SET,my-sea → 🌏 东南亚专线
 # ══════════════════════════════════════════════════════════════
 payload:
@@ -130,3 +131,21 @@ payload:
   # ══════════════════════════════════════════════════════════════
   - 'DOMAIN-SUFFIX,polyease.app'
   - 'DOMAIN,chats.polyease.app'
+
+  # ══════════════════════════════════════════════════════════════
+  #  predict.fun（BNB Chain 预测市场）—— 共 6 条
+  #  核查（2026-11）：
+  #    · 75 个 Next.js chunk 全量解析，端点硬编码在配置里：
+  #        graphqlEndpoint  https://graphql.predict.fun/graphql
+  #        websocketEndpoint wss://ws.predict.fun/ws
+  #        staticDomain     static.predict.fun
+  #    · 浏览器实测另有 privy.predict.fun（Privy 登录专用 CNAME）
+  #    · testnet 的 *.predict.fail 已剔除
+  #  ⚠️ 链上行情还直连 rpc.hyperliquid.xyz，该条已在 Hyperliquid 段覆盖
+  # ══════════════════════════════════════════════════════════════
+  - 'DOMAIN-SUFFIX,predict.fun'
+  - 'DOMAIN,graphql.predict.fun'
+  - 'DOMAIN,ws.predict.fun'
+  - 'DOMAIN,static.predict.fun'
+  - 'DOMAIN,privy.predict.fun'
+  - 'DOMAIN,developers.predict.fun'
