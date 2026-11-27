@@ -1,5 +1,5 @@
 // ══════════════════════════════════════════════════════════════
-//  FlClash 覆写脚本 · 完整版（日本 + 香港 + 台湾 + 美国 + 德国 + 韩国 六条专线）
+//  FlClash 覆写脚本 · 完整版（日本 + 香港 + 台湾 + 美国 + 德国 + 韩国 + 东南亚 七条专线）
 //
 //  规则集（ephore/Broker-Rule → Clash/）
 //    ├─ adblock.yaml  → RULE-SET,my-adblock,REJECT   广告（domain）
@@ -9,7 +9,8 @@
 //    ├─ tw.yaml       → RULE-SET,my-tw,🇨🇳 台湾专线   交易所/钱包/CDN（domain）
 //    ├─ us.yaml       → RULE-SET,my-us,🇺🇸 美国专线   AT&T/DIRECTV/Yahoo/Reddit（domain）
 //    ├─ de.yaml       → RULE-SET,my-de,🇩🇪 德国专线   N26/Kraken/Coinbase（classical）
-//    └─ kr.yaml       → RULE-SET,my-kr,🇰🇷 韩国专线   Polymarket（classical）
+//    ├─ kr.yaml       → RULE-SET,my-kr,🇰🇷 韩国专线   Polymarket（classical）
+//    └─ （东南亚专线组仅建组，暂未挂规则集，需要时按地区加 DOMAIN-SUFFIX）
 //  外部
 //    └─ blackmatrix7 → RULE-SET,bm7-ad,REJECT
 //
@@ -130,6 +131,23 @@ function main(config) {
       "🇰🇷 韩国 05 家宽",
       "🇰🇷 韩国 01",
       "🇰🇷 韩国 02",
+      "DIRECT"
+      ]
+    },
+    {
+      // 东南亚 + 澳门：家宽优先（"XX 家宽" 是本订阅里的住宅 IP 命名）
+      name: "🌏 东南亚专线",
+      type: "select",
+      proxies: [
+      "🇲🇾 马来西亚 01 家宽",
+      "🇲🇾 马来西亚 02 家宽",
+      "🇲🇾 马来西亚 03 家宽",
+      "🇵🇭 菲律宾 02 家宽",
+      "🇻🇳 越南 家宽",
+      "🇲🇴 澳门 家宽",
+      "🇵🇭 菲律宾 01",
+      "🇱🇦 老挝",
+      "🇰🇭 柬埔寨",
       "DIRECT"
       ]
     }
