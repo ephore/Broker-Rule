@@ -221,7 +221,7 @@ function main(config) {
 
     // 台湾：domain 格式
     "my-tw": {
-      type: "http", behavior: "domain", format: "yaml",
+      type: "http", behavior: "classical", format: "yaml",
       url: "https://cdn.jsdelivr.net/gh/ephore/Broker-Rule@main/Clash/tw.yaml",
       path: "./ruleset/my-tw.yaml", interval: 3600
     },
