@@ -1,5 +1,5 @@
 # ══════════════════════════════════════════════════════════════
-#  指定节点分流规则集 · 东南亚专线（Polymarket + Hyperliquid）
+#  指定节点分流规则集 · 东南亚专线（Polymarket + Hyperliquid + PolyEase）
 #
 #  格式：classical（与 adblock/direct 的 domain 格式不同）
 #    DOMAIN-SUFFIX,polymarket.com
@@ -13,6 +13,7 @@
 #  内容：
 #    · Polymarket  —— 44 条（kr.yaml 已于 2026-11 清空，规则只保留在本文件）
 #    · Hyperliquid —— 20 条（永续 DEX：API/WS/RPC/桥/钱包登录依赖）
+#    · PolyEase    ——  2 条（第三方图表站，行情直连 Hyperliquid 官方域名）
 #  挂载：RULE-SET,my-sea → 🌏 东南亚专线
 # ══════════════════════════════════════════════════════════════
 payload:
@@ -117,3 +118,15 @@ payload:
   - 'DOMAIN,explorer-api.walletconnect.com'
   - 'DOMAIN,pulse.walletconnect.org'
   - 'DOMAIN,verify.walletconnect.org'
+
+  # ══════════════════════════════════════════════════════════════
+  #  PolyEase（第三方 Hyperliquid / Polymarket 图表站）—— 共 2 条
+  #  核查（2026-11）：
+  #    · 两站均为纯前端，后端走同域 /api/v1、/account/api 相对路径
+  #    · chats 站行情直连 api.hyperliquid.xyz + api-ui.hyperliquid.xyz
+  #      （主备 WS 亦然），这两条已在本文件 Hyperliquid 段覆盖
+  #    · polyease.app 为 Cloudflare 泛解析，v3/docs/status/api 等
+  #      子域实测均返回 525（不存在），故只收真实站点
+  # ══════════════════════════════════════════════════════════════
+  - 'DOMAIN-SUFFIX,polyease.app'
+  - 'DOMAIN,chats.polyease.app'
