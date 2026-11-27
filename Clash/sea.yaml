@@ -1,5 +1,5 @@
 # ══════════════════════════════════════════════════════════════
-#  指定节点分流规则集 · 东南亚专线（Polymarket + Hyperliquid + PolyEase + predict.fun）
+#  指定节点分流规则集 · 东南亚专线（Polymarket / Hyperliquid / PolyEase / predict.fun / trade.xyz）
 #
 #  格式：classical（与 adblock/direct 的 domain 格式不同）
 #    DOMAIN-SUFFIX,polymarket.com
@@ -15,6 +15,7 @@
 #    · Hyperliquid —— 20 条（永续 DEX：API/WS/RPC/桥/钱包登录依赖）
 #    · PolyEase    ——  2 条（第三方图表站，行情直连 Hyperliquid 官方域名）
 #    · predict.fun ——  6 条（BNB 链预测市场：GraphQL / WS / 静态资源 / 登录）
+#    · trade[XYZ]  ——  3 条（美股/IPO 永续，行情直连 Hyperliquid）
 #  挂载：RULE-SET,my-sea → 🌏 东南亚专线
 # ══════════════════════════════════════════════════════════════
 payload:
@@ -149,3 +150,16 @@ payload:
   - 'DOMAIN,static.predict.fun'
   - 'DOMAIN,privy.predict.fun'
   - 'DOMAIN,developers.predict.fun'
+
+  # ══════════════════════════════════════════════════════════════
+  #  trade[XYZ]（Hyperliquid 之上的股票/IPO 永续合约）—— 共 3 条
+  #  核查（2026-11）：
+  #    · 55 个 Next.js chunk 全量解析 + 浏览器实测
+  #    · 行情直连 api.hyperliquid.xyz / api-ui.hyperliquid.xyz，
+  #      跨链走 api.hyperunit.xyz，均已在本文件前文覆盖
+  #    · 自身登录/后端为同域相对路径（/api/v1/*），无独立 API 子域
+  #    · www / api / ws / static / cdn / status / graphql 等子域均无 DNS
+  # ══════════════════════════════════════════════════════════════
+  - 'DOMAIN-SUFFIX,trade.xyz'
+  - 'DOMAIN,app.trade.xyz'
+  - 'DOMAIN,docs.trade.xyz'
