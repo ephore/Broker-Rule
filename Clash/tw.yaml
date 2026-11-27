@@ -95,11 +95,10 @@ payload:
   - 'DOMAIN,sis-hk.push.theengagelab.com'
   - 'DOMAIN,pushstat-hk.engagelab.com'
 
-  # ── 钱包连接与组件（11 条）
+  # ── 钱包连接与组件（10 条）
   - 'DOMAIN,img.gurenla.com'
   - 'DOMAIN,relay.walletconnect.org'
   - 'DOMAIN,conf.chainnear.com'
-  - 'DOMAIN,verify.walletconnect.org'
   - 'DOMAIN,newshare.bwb.online'
   - 'DOMAIN,newshare.bwb.global'
   - 'DOMAIN,widgets.marqeta.com'
