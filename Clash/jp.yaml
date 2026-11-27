@@ -16,7 +16,7 @@
 # ══════════════════════════════════════════════════════════════
 payload:
 
-  # ── 券商 / 开发工具（40 条，原有）────────────────────
+  # ── 券商 / 开发工具（43 条，原有）────────────────────
   - 'DOMAIN-SUFFIX,interactivebrokers.com'
   - 'DOMAIN-SUFFIX,interactivebrokers.ie'
   - 'DOMAIN-SUFFIX,interactivebrokers.ca'
@@ -38,6 +38,9 @@ payload:
   - 'DOMAIN-SUFFIX,ibkr.com.hk'
   - 'DOMAIN-SUFFIX,ibllc.com'
   - 'DOMAIN-SUFFIX,ibkrguides.com'
+  - 'DOMAIN-SUFFIX,ibkr.info'
+  - 'DOMAIN-SUFFIX,ibkr.org'
+  - 'DOMAIN-SUFFIX,interactivebrokers.org'
   - 'DOMAIN-SUFFIX,schwab.com'
   - 'DOMAIN-SUFFIX,schwab.com.hk'
   - 'DOMAIN-SUFFIX,schwab.com.sg'
