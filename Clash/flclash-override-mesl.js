@@ -136,19 +136,6 @@ function main(config) {
       ]
     },
     {
-      // Polymarket 专用：家宽优先（预测市场对住宅 IP 风控更友好）
-      name: "🇰🇷 韩国专线",
-      type: "select",
-      proxies: [
-      "🇰🇷 韩国 03 家宽",
-      "🇰🇷 韩国 04 家宽",
-      "🇰🇷 韩国 05 家宽",
-      "🇰🇷 韩国 01",
-      "🇰🇷 韩国 02",
-      "DIRECT"
-      ]
-    },
-    {
       // 东南亚 + 澳门：家宽优先（"XX 家宽" 是本订阅里的住宅 IP 命名）
       name: "🌏 东南亚专线",
       type: "select",
@@ -271,7 +258,7 @@ function main(config) {
     "RULE-SET,bm7-ad,REJECT",         // ③ blackmatrix7
     "RULE-SET,my-hk,🇭🇰 香港专线",     // ④ 香港：Stripe / iFAST / Wise
     "RULE-SET,my-tw,🇨🇳 台湾专线",     // ⑤ 台湾：交易所 / 钱包 / CDN
-    "RULE-SET,my-sea,🌏 东南亚专线",   // ⑥ 东南亚：Polymarket（与韩国同源，排在前面优先生效）
+    "RULE-SET,my-sea,🌏 东南亚专线",   // ⑥ 东南亚：Polymarket / Hyperliquid / PolyEase / predict.fun / trade.xyz
     "RULE-SET,my-jp,🇯🇵 日本专线",     // ⑦ 日本：券商 / 开发工具
     "RULE-SET,my-us,🇺🇸 美国专线",      // ⑧ 美国：AT&T / DIRECTV / Yahoo / Reddit
     "RULE-SET,my-de,🇩🇪 德国专线"       // ⑨ 德国：N26 / Kraken / Coinbase
