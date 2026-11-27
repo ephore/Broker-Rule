@@ -1,83 +1,85 @@
 # 学术出版 / 科研资源 直连规则集
-# 格式：' 开头 = 精确匹配；'+. 开头 = 后缀匹配（含所有子域名）
+# 格式：classical（每行带类型前缀）
+#   DOMAIN,xxx = 精确匹配；DOMAIN-SUFFIX,xxx = 后缀匹配（含所有子域名）
+# ⚠️ 脚本里 behavior 必须写 "classical"
 # 用途：FlClash / mihomo rule-provider  →  RULE-SET,direct-academic,DIRECT
 payload:
 
-  # ── 后缀匹配（31 条）────────────────────────────
+  # ── 后缀匹配（35 条）────────────────────────────
   # ACS
-  - '+.acs.org'
+  - 'DOMAIN-SUFFIX,acs.org'
   # Wiley
-  - '+.wiley.com'
-  - 'wiley.scienceconnect.io'
+  - 'DOMAIN-SUFFIX,wiley.com'
+  - 'DOMAIN,wiley.scienceconnect.io'
   # Elsevier / ScienceDirect
-  - '+.elsevier.com'
-  - '+.sciencedirect.com'
-  - '+.sciencedirectassets.com'
-  - '+.els-cdn.com'
+  - 'DOMAIN-SUFFIX,elsevier.com'
+  - 'DOMAIN-SUFFIX,sciencedirect.com'
+  - 'DOMAIN-SUFFIX,sciencedirectassets.com'
+  - 'DOMAIN-SUFFIX,els-cdn.com'
   # RSC
-  - '+.rsc.org'
+  - 'DOMAIN-SUFFIX,rsc.org'
   # Nature / Springer Nature
-  - '+.nature.com'
-  - '+.springernature.com'
-  - '+.readcube.com'
+  - 'DOMAIN-SUFFIX,nature.com'
+  - 'DOMAIN-SUFFIX,springernature.com'
+  - 'DOMAIN-SUFFIX,readcube.com'
   # AAAS Science
-  - '+.science.org'
+  - 'DOMAIN-SUFFIX,science.org'
   # Springer
-  - '+.springer.com'
+  - 'DOMAIN-SUFFIX,springer.com'
   # Reaxys / CAS
-  - '+.reaxys.com'
-  - '+.cas.org'
+  - 'DOMAIN-SUFFIX,reaxys.com'
+  - 'DOMAIN-SUFFIX,cas.org'
   # Optica
-  - '+.optica.org'
+  - 'DOMAIN-SUFFIX,optica.org'
   # Taylor & Francis
-  - '+.tandfonline.com'
+  - 'DOMAIN-SUFFIX,tandfonline.com'
   # scite
-  - '+.scite.ai'
+  - 'DOMAIN-SUFFIX,scite.ai'
   # Altmetric
-  - '+.altmetric.com'
+  - 'DOMAIN-SUFFIX,altmetric.com'
   # 第三方服务
-  - '+.osano.com'
-  - '+.addtoany.com'
-  - '+.semetricmedia.com'
+  - 'DOMAIN-SUFFIX,osano.com'
+  - 'DOMAIN-SUFFIX,addtoany.com'
+  - 'DOMAIN-SUFFIX,semetricmedia.com'
   # OUP
-  - '+.oup.com'
+  - 'DOMAIN-SUFFIX,oup.com'
   # 其他出版社
-  - '+.jthjournal.org'
-  - '+.proquest.com'
-  - '+.apa.org'
-  - '+.worldscientific.com'
-  - '+.ametsoc.org'
-  - '+.magonlinelibrary.com'
-  - '+.perfdrive.com'
-  - '+.crossref.org'
-  - '+.thieme-connect.de'
+  - 'DOMAIN-SUFFIX,jthjournal.org'
+  - 'DOMAIN-SUFFIX,proquest.com'
+  - 'DOMAIN-SUFFIX,apa.org'
+  - 'DOMAIN-SUFFIX,worldscientific.com'
+  - 'DOMAIN-SUFFIX,ametsoc.org'
+  - 'DOMAIN-SUFFIX,magonlinelibrary.com'
+  - 'DOMAIN-SUFFIX,perfdrive.com'
+  - 'DOMAIN-SUFFIX,crossref.org'
+  - 'DOMAIN-SUFFIX,thieme-connect.de'
   # IOP
-  - '+.iop.org'
-  - '+.utppublishing.com'
+  - 'DOMAIN-SUFFIX,iop.org'
+  - 'DOMAIN-SUFFIX,utppublishing.com'
   # 智慧树
-  - '+.hybbtree.com'
+  - 'DOMAIN-SUFFIX,hybbtree.com'
 
-  # ── 精确匹配（15 条）────────────────────────────
+  # ── 精确匹配（18 条）────────────────────────────
   # OUP / SPIE / Hogrefe / 出版社子站
-  - 'academic.oup.com'
-  - 'oup.silverchair-cdn.com'
-  - 'oup2-idp.sams-sigma.com'
-  - 'www.spiedigitallibrary.org'
-  - 'spie.org'
-  - 'econtent.hogrefe.com'
-  - 'www.concrete.org'
+  - 'DOMAIN,academic.oup.com'
+  - 'DOMAIN,oup.silverchair-cdn.com'
+  - 'DOMAIN,oup2-idp.sams-sigma.com'
+  - 'DOMAIN,www.spiedigitallibrary.org'
+  - 'DOMAIN,spie.org'
+  - 'DOMAIN,econtent.hogrefe.com'
+  - 'DOMAIN,www.concrete.org'
   # Crossref（Crossmark 相关）
-  - 'crossmark.crossref.org'
-  - 'crossmark-cdn.crossref.org'
+  - 'DOMAIN,crossmark.crossref.org'
+  - 'DOMAIN,crossmark-cdn.crossref.org'
   # IOP / SeamlessAccess
-  - 'static.iopscience.com'
-  - 'cdp.iopscience.iop.org'
-  - 'service.seamlessaccess.org'
+  - 'DOMAIN,static.iopscience.com'
+  - 'DOMAIN,cdp.iopscience.iop.org'
+  - 'DOMAIN,service.seamlessaccess.org'
   # 其他
-  - 'cdn.pendo.io'
-  - 'wiley-jobs-widget.madgexjb.com'
-  - 'videofile.hybbtree.com'
-  - 'rscj.silverchair-cdn.com'
-  - 'assets.aaas.org'
-  - 'acs.silverchair-cdn.com'
+  - 'DOMAIN,cdn.pendo.io'
+  - 'DOMAIN,wiley-jobs-widget.madgexjb.com'
+  - 'DOMAIN,videofile.hybbtree.com'
+  - 'DOMAIN,rscj.silverchair-cdn.com'
+  - 'DOMAIN,assets.aaas.org'
+  - 'DOMAIN,acs.silverchair-cdn.com'
   # 注：utppublishing.com 已用后缀覆盖，此处不再重复
