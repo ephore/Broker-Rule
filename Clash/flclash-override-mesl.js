@@ -1,5 +1,5 @@
 // ══════════════════════════════════════════════════════════════
-//  FlClash 覆写脚本 · 完整版（日本 + 香港 + 台湾 + 美国 + 德国 + 韩国 + 东南亚 七条专线）
+//  FlClash 覆写脚本 · 完整版（日本 + 香港 + 台湾 + 美国 + 德国 + 韩国 + 东南亚）
 //
 //  规则集（ephore/Broker-Rule → Clash/）
 //    ├─ adblock.yaml  → RULE-SET,my-adblock,REJECT   广告（domain）
@@ -9,12 +9,8 @@
 //    ├─ tw.yaml       → RULE-SET,my-tw,🇨🇳 台湾专线   交易所/钱包/CDN（domain）
 //    ├─ us.yaml       → RULE-SET,my-us,🇺🇸 美国专线   AT&T/DIRECTV/Yahoo/Reddit（domain）
 //    ├─ de.yaml       → RULE-SET,my-de,🇩🇪 德国专线   N26/Kraken/Coinbase（classical）
-//    ├─ kr.yaml       → RULE-SET,my-kr,🇰🇷 韩国专线   Polymarket（classical）
-//    └─ sea.yaml      → RULE-SET,my-sea,🌏 东南亚专线  Polymarket（规则同 kr.yaml）
+//    └─ sea.yaml      → RULE-SET,my-sea,🌏 东南亚专线  Polymarket（classical）
 //
-//  ⚠️ my-sea 与 my-kr 内容相同，规则按顺序先匹配先命中：
-//     当前 my-sea 在前 → Polymarket 走东南亚专线；
-//     想改回韩国专线，把 my-sea 那一行注释掉即可（或调换两行顺序）
 //  外部
 //    └─ blackmatrix7 → RULE-SET,bm7-ad,REJECT
 //
@@ -244,15 +240,7 @@ function main(config) {
       path: "./ruleset/my-de.yaml", interval: 3600
     },
 
-    // 韩国：classical 格式（Polymarket 专用域名）
-    //   jsDelivr 刚推的 @main 文件有缓存延迟，故走 fastly 镜像（同 my-jp）
-    "my-kr": {
-      type: "http", behavior: "classical", format: "yaml",
-      url: "https://fastly.jsdelivr.net/gh/ephore/Broker-Rule@main/Clash/kr.yaml",
-      path: "./ruleset/my-kr.yaml", interval: 3600
-    },
-
-    // 东南亚：classical 格式（Polymarket，规则与 kr.yaml 相同）
+    // 东南亚：classical 格式（Polymarket 专用域名）
     "my-sea": {
       type: "http", behavior: "classical", format: "yaml",
       url: "https://fastly.jsdelivr.net/gh/ephore/Broker-Rule@main/Clash/sea.yaml",
@@ -270,7 +258,6 @@ function main(config) {
     "RULE-SET,my-hk,🇭🇰 香港专线",     // ④ 香港：Stripe / iFAST / Wise
     "RULE-SET,my-tw,🇨🇳 台湾专线",     // ⑤ 台湾：交易所 / 钱包 / CDN
     "RULE-SET,my-sea,🌏 东南亚专线",   // ⑥ 东南亚：Polymarket（与韩国同源，排在前面优先生效）
-    "RULE-SET,my-kr,🇰🇷 韩国专线",     // ⑦ 韩国：Polymarket（备用，注释掉上一行即可启用）
     "RULE-SET,my-jp,🇯🇵 日本专线",     // ⑦ 日本：券商 / 开发工具
     "RULE-SET,my-us,🇺🇸 美国专线",      // ⑧ 美国：AT&T / DIRECTV / Yahoo / Reddit
     "RULE-SET,my-de,🇩🇪 德国专线"       // ⑨ 德国：N26 / Kraken / Coinbase
