@@ -1,5 +1,5 @@
 # ══════════════════════════════════════════════════════════════
-#  指定节点分流规则集 · 东南亚专线（Polymarket）
+#  指定节点分流规则集 · 东南亚专线（Polymarket + Hyperliquid）
 #
 #  格式：classical（与 adblock/direct 的 domain 格式不同）
 #    DOMAIN-SUFFIX,polymarket.com
@@ -10,11 +10,10 @@
 #  更新后清缓存：
 #    https://purge.jsdelivr.net/gh/ephore/Broker-Rule@main/Clash/sea.yaml
 #
-#  规则正文与 kr.yaml（韩国专线）完全一致，两套同源：
-#    韩国专线   RULE-SET,my-kr  → 🇰🇷 韩国专线
-#    东南亚专线 RULE-SET,my-sea → 🌏 东南亚专线
-#  ⚠️ 两者会同时命中同一批域名，规则顺序在前的先匹配；
-#     想让 Polymarket 固定走某条线，把不需要的那条注释掉即可
+#  内容：
+#    · Polymarket  —— 44 条（kr.yaml 已于 2026-11 清空，规则只保留在本文件）
+#    · Hyperliquid —— 20 条（永续 DEX：API/WS/RPC/桥/钱包登录依赖）
+#  挂载：RULE-SET,my-sea → 🌏 东南亚专线
 # ══════════════════════════════════════════════════════════════
 payload:
 
@@ -77,3 +76,44 @@ payload:
   - 'DOMAIN,docs.polymarket.com'
   - 'DOMAIN,status.polymarket.com'
   - 'DOMAIN,news.polymarket.com'
+
+  # ══════════════════════════════════════════════════════════════
+  #  Hyperliquid（永续合约 DEX）—— 共 20 条
+  #  来源核查（2026-11）：
+  #    · 官方文档 hyperliquid.gitbook.io（150 页全量，API/WS/RPC 端点）
+  #    · app.hyperliquid.xyz 前端实际请求（api-ui / privy / walletconnect）
+  #    · Cloudflare DoH 逐条验证可解析（testnet 已剔除）
+  # ══════════════════════════════════════════════════════════════
+  # ── 主站 / 交易所前端（3 条）
+  - 'DOMAIN-SUFFIX,hyperliquid.xyz'
+  - 'DOMAIN,app.hyperliquid.xyz'
+  - 'DOMAIN,api-ui.hyperliquid.xyz'
+
+  # ── 核心 API + WebSocket（下单 /info /exchange /ws 实时推送）（2 条）
+  - 'DOMAIN,api.hyperliquid.xyz'
+  - 'DOMAIN,stats-data.hyperliquid.xyz'
+
+  # ── HyperEVM 链上 RPC（含 docs 中的公共 RPC）（4 条）
+  - 'DOMAIN,rpc.hyperliquid.xyz'
+  - 'DOMAIN,hyperliquid.drpc.org'
+  - 'DOMAIN,hyperliquid-json-rpc.stakely.io'
+  - 'DOMAIN,rpc.hypurrscan.io'
+
+  # ── 跨链充值 / Unit 桥（2 条）
+  - 'DOMAIN-SUFFIX,hyperunit.xyz'
+
+  # ── 区块浏览器／数据站（3 条）
+  - 'DOMAIN-SUFFIX,hyperscan.com'
+  - 'DOMAIN-SUFFIX,hyperevmscan.io'
+  - 'DOMAIN-SUFFIX,hypurrscan.io'
+
+  # ── 生态门户 / 官方文档（2 条）
+  - 'DOMAIN,hl.eco'
+  - 'DOMAIN,hyperliquid.gitbook.io'
+
+  # ── 登录与钱包连接（privy / web3modal / walletconnect）（5 条）
+  - 'DOMAIN-SUFFIX,privy.io'
+  - 'DOMAIN,api.web3modal.org'
+  - 'DOMAIN,explorer-api.walletconnect.com'
+  - 'DOMAIN,pulse.walletconnect.org'
+  - 'DOMAIN,verify.walletconnect.org'
