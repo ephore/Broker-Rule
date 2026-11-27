@@ -1,0 +1,80 @@
+# ══════════════════════════════════════════════════════════════
+#  指定节点分流规则集 · 韩国专线（Polymarket 专用）
+#
+#  格式：classical（与 adblock/direct 的 domain 格式不同）
+#    DOMAIN-SUFFIX,polymarket.com
+#    DOMAIN,clob.polymarket.com
+#
+#  ⚠️ 脚本里 behavior 必须写 "classical"
+#
+#  更新后清缓存：
+#    https://purge.jsdelivr.net/gh/ephore/Broker-Rule@main/Clash/kr.yaml
+#
+#  域名来源核查（2026-11）：
+#    · 官网 JS bundle 内硬编码的端点常量（polymarket.com 前端）
+#    · 官方文档 docs.polymarket.com 全量 API Reference
+#    · 证书透明度日志 crt.sh + Cloudflare DoH 逐个验证可解析
+#  ⚠️ 主域用 DOMAIN-SUFFIX 整域覆盖（自动含新增子域）；
+#     预发 / staging / test 子域已剔除
+# ══════════════════════════════════════════════════════════════
+payload:
+
+  # ── 主站与主 API（clob 下单 / gamma 行情 / data-api 持仓 / relayer 免 gas）（7 条）
+  - 'DOMAIN-SUFFIX,polymarket.com'
+  - 'DOMAIN-SUFFIX,polymarket.us'
+  - 'DOMAIN-SUFFIX,polymarket.dev'
+  - 'DOMAIN,clob.polymarket.com'
+  - 'DOMAIN,gamma-api.polymarket.com'
+  - 'DOMAIN,data-api.polymarket.com'
+  - 'DOMAIN,combos-rfq-api.polymarket.sh'
+
+  # ── 实时推送 WebSocket（订单簿 / 成交 / 链上活动）（5 条）
+  - 'DOMAIN,ws-subscriptions-clob.polymarket.com'
+  - 'DOMAIN,ws-subscriptions-frontend-clob.polymarket.com'
+  - 'DOMAIN,ws-live-data.polymarket.com'
+  - 'DOMAIN,ws-live-v2.polymarket.com'
+  - 'DOMAIN,ws.perpetuals.polymarket.com'
+
+  # ── 交易 / 结算基础设施（relayer 免 gas、跨链充值、地区风控、RFQ）（6 条）
+  - 'DOMAIN,relayer-v2.polymarket.com'
+  - 'DOMAIN,bridge.polymarket.com'
+  - 'DOMAIN,geo-ip-api.polymarket.com'
+  - 'DOMAIN,combos-rfq-api.polymarket.com'
+  - 'DOMAIN,combos-rfq-gateway-frontend.polymarket.com'
+  - 'DOMAIN,api.polymarket.us'
+
+  # ── 体育 / 永续 / DeFi 子产品（6 条）
+  - 'DOMAIN,sports-api.polymarket.com'
+  - 'DOMAIN,api.perpetuals.polymarket.com'
+  - 'DOMAIN,assets.perpetuals.polymarket.com'
+  - 'DOMAIN,api.defi.polymarket.com'
+  - 'DOMAIN,institutional.polymarket.com'
+  - 'DOMAIN,mm.clob.polymarket.com'
+
+  # ── 静态资源 / 地图瓦片 / 行情小部件（5 条）
+  - 'DOMAIN,tiles.polymarket.com'
+  - 'DOMAIN,images.polymarket.com'
+  - 'DOMAIN,banners.polymarket.com'
+  - 'DOMAIN,ticker.polymarket.com'
+  - 'DOMAIN,embeds.polymarket.com'
+
+  # ── 图片 / 行情 S3（1 条）
+  - 'DOMAIN-SUFFIX,polymarket-upload.s3.us-east-2.amazonaws.com'
+
+  # ── 第三方依赖：钱包登录 / 链上 RPC / 行情与支付 SDK（9 条）
+  - 'DOMAIN-SUFFIX,magic.link'
+  - 'DOMAIN,polygon-mainnet.g.alchemy.com'
+  - 'DOMAIN,eth-mainnet.g.alchemy.com'
+  - 'DOMAIN,data.ornn.com'
+  - 'DOMAIN,api.sunbreak.com'
+  - 'DOMAIN-SUFFIX,fun.xyz'
+  - 'DOMAIN,igove4ofv.platform.grcv.io'
+  - 'DOMAIN,sdk.iad-07.braze.com'
+  - 'DOMAIN,sr-client-cfg.amplitude.com'
+
+  # ── 帮助 / 文档 / 状态页（5 条）
+  - 'DOMAIN-SUFFIX,polymarket.mintlify.app'
+  - 'DOMAIN,help.polymarket.com'
+  - 'DOMAIN,docs.polymarket.com'
+  - 'DOMAIN,status.polymarket.com'
+  - 'DOMAIN,news.polymarket.com'
