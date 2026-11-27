@@ -1,5 +1,5 @@
 // ══════════════════════════════════════════════════════════════
-//  FlClash 覆写脚本 · 完整版（日本 + 香港 + 台湾 + 美国 + 德国 + 韩国 + 东南亚）
+//  FlClash 覆写脚本 · 完整版（日本 + 香港 + 台湾 + 美国 + 德国 + 东南亚）
 //
 //  规则集（ephore/Broker-Rule → Clash/）
 //    ├─ adblock.yaml  → RULE-SET,my-adblock,REJECT   广告（classical）
@@ -16,13 +16,27 @@
 //
 //  ⚠️ 脚本会同时开启 sniffer（域名嗅探）——否则 QUIC/直连 IP 的广告拦不住
 //
-//  ⚠️ behavior 必须和文件格式匹配：
-//       adblock / direct / tw / us = "domain"
-//       hk / bm7-ad / de / jp / kr = "classical"
+//  ⚠️ behavior 必须和文件格式匹配：本脚本全部 provider 均为 "classical"
+//       （Clash/*.yaml 每行都带 DOMAIN / DOMAIN-SUFFIX 类型前缀）
+//       新增规则集时若用裸域名格式，behavior 才写 "domain"
 //
-//  安装：工具 → 进阶配置 → 脚本 → 添加 → 粘贴 → 保存
-//       配置 → 选中订阅 → ⋮ → 更多 → 覆写 → 模式「脚本」→ 选中
-//       仪表盘 → 重启连接
+//  安装（URL 导入，推荐）：
+//       底部「配置」→ 右上「覆写脚本」→ ＋ → 加载方式选 URL → 粘贴
+//       https://raw.githubusercontent.com/ephore/Broker-Rule/main/Clash/flclash-override-mesl.js
+//       → 保存
+//       配置页 → 订阅卡片 ⋮ → 更多 → 覆写 → 选中本脚本 → 确定
+//       首页 → 重启连接
+//       ⚠️ 必须用 Raw 链接；blob 页链接会报 SyntaxError: unexpected token '<'
+//       ⚠️ 只创建不关联到订阅不会生效
+//
+//  安装（本地粘贴）：
+//       工具 → 进阶配置 → 脚本 → 添加 → 粘贴 → 保存 → 同上关联
+//
+//  更新：
+//       FlClash ≥ 0.9.4 会记住导入 URL 并自动更新，也可手动触发刷新
+//       < 0.9.4 为一次性下载，改完需重新「URL 导入」或重新粘贴
+//       刚推送后若拿到旧版，是 CDN 缓存，可改用 fastly.jsdelivr.net 镜像：
+//       https://fastly.jsdelivr.net/gh/ephore/Broker-Rule@main/Clash/flclash-override-mesl.js
 // ══════════════════════════════════════════════════════════════
 
 function main(config) {
