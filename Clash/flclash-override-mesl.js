@@ -2,12 +2,12 @@
 //  FlClash 覆写脚本 · 完整版（日本 + 香港 + 台湾 + 美国 + 德国 + 韩国 + 东南亚）
 //
 //  规则集（ephore/Broker-Rule → Clash/）
-//    ├─ adblock.yaml  → RULE-SET,my-adblock,REJECT   广告（domain）
-//    ├─ direct.yaml   → RULE-SET,my-direct,DIRECT    学术直连（domain）
+//    ├─ adblock.yaml  → RULE-SET,my-adblock,REJECT   广告（classical）
+//    ├─ direct.yaml   → RULE-SET,my-direct,DIRECT    学术直连（classical）
 //    ├─ jp.yaml       → RULE-SET,my-jp,🇯🇵 日本专线   券商/开发 + Cloudflare（classical）
 //    ├─ hk.yaml       → RULE-SET,my-hk,🇭🇰 香港专线   Stripe/iFAST/Wise（classical）
 //    ├─ tw.yaml       → RULE-SET,my-tw,🇨🇳 台湾专线   交易所/钱包/CDN（classical）
-//    ├─ us.yaml       → RULE-SET,my-us,🇺🇸 美国专线   AT&T/DIRECTV/Yahoo/Reddit（domain）
+//    ├─ us.yaml       → RULE-SET,my-us,🇺🇸 美国专线   AT&T/DIRECTV/Yahoo/Reddit（classical）
 //    ├─ de.yaml       → RULE-SET,my-de,🇩🇪 德国专线   N26/Kraken/Coinbase（classical）
 //    └─ sea.yaml      → RULE-SET,my-sea,🌏 东南亚专线  Polymarket（classical）
 //
@@ -182,13 +182,13 @@ function main(config) {
   var PROVIDERS = {
 
     "my-direct": {
-      type: "http", behavior: "domain", format: "yaml",
+      type: "http", behavior: "classical", format: "yaml",
       url: "https://cdn.jsdelivr.net/gh/ephore/Broker-Rule@main/Clash/direct.yaml",
       path: "./ruleset/my-direct.yaml", interval: 3600
     },
 
     "my-adblock": {
-      type: "http", behavior: "domain", format: "yaml",
+      type: "http", behavior: "classical", format: "yaml",
       url: "https://cdn.jsdelivr.net/gh/ephore/Broker-Rule@main/Clash/adblock.yaml",
       path: "./ruleset/my-adblock.yaml", interval: 3600
     },
@@ -228,7 +228,7 @@ function main(config) {
 
     // 美国：domain 格式
     "my-us": {
-      type: "http", behavior: "domain", format: "yaml",
+      type: "http", behavior: "classical", format: "yaml",
       url: "https://cdn.jsdelivr.net/gh/ephore/Broker-Rule@main/Clash/us.yaml",
       path: "./ruleset/my-us.yaml", interval: 3600
     },
