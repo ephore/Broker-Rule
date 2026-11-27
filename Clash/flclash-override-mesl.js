@@ -6,7 +6,7 @@
 //    ├─ direct.yaml   → RULE-SET,my-direct,DIRECT    学术直连（domain）
 //    ├─ jp.yaml       → RULE-SET,my-jp,🇯🇵 日本专线   券商/开发 + Cloudflare（classical）
 //    ├─ hk.yaml       → RULE-SET,my-hk,🇭🇰 香港专线   Stripe/iFAST/Wise（classical）
-//    ├─ tw.yaml       → RULE-SET,my-tw,🇨🇳 台湾专线   交易所/钱包/CDN（domain）
+//    ├─ tw.yaml       → RULE-SET,my-tw,🇨🇳 台湾专线   交易所/钱包/CDN（classical）
 //    ├─ us.yaml       → RULE-SET,my-us,🇺🇸 美国专线   AT&T/DIRECTV/Yahoo/Reddit（domain）
 //    ├─ de.yaml       → RULE-SET,my-de,🇩🇪 德国专线   N26/Kraken/Coinbase（classical）
 //    └─ sea.yaml      → RULE-SET,my-sea,🌏 东南亚专线  Polymarket（classical）
