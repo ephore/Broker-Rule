@@ -35,8 +35,10 @@
 //  更新：
 //       FlClash ≥ 0.9.4 会记住导入 URL 并自动更新，也可手动触发刷新
 //       < 0.9.4 为一次性下载，改完需重新「URL 导入」或重新粘贴
-//       刚推送后若拿到旧版，是 CDN 缓存，可改用 fastly.jsdelivr.net 镜像：
-//       https://fastly.jsdelivr.net/gh/ephore/Broker-Rule@main/Clash/flclash-override-mesl.js
+//       本仓库所有 provider 统一走 fastly.jsdelivr.net（cdn.jsdelivr.net 的
+//       @main 快照缓存滞后严重，常拿到旧版规则集；fastly 镜像即时生效）
+//       脚本自身的更新地址（raw）：
+//       https://raw.githubusercontent.com/ephore/Broker-Rule/main/Clash/flclash-override-mesl.js
 // ══════════════════════════════════════════════════════════════
 
 function main(config) {
@@ -184,13 +186,13 @@ function main(config) {
 
     "my-direct": {
       type: "http", behavior: "classical", format: "yaml",
-      url: "https://cdn.jsdelivr.net/gh/ephore/Broker-Rule@main/Clash/direct.yaml",
+      url: "https://fastly.jsdelivr.net/gh/ephore/Broker-Rule@main/Clash/direct.yaml",
       path: "./ruleset/my-direct.yaml", interval: 3600
     },
 
     "my-adblock": {
       type: "http", behavior: "classical", format: "yaml",
-      url: "https://cdn.jsdelivr.net/gh/ephore/Broker-Rule@main/Clash/adblock.yaml",
+      url: "https://fastly.jsdelivr.net/gh/ephore/Broker-Rule@main/Clash/adblock.yaml",
       path: "./ruleset/my-adblock.yaml", interval: 3600
     },
 
@@ -208,7 +210,7 @@ function main(config) {
     // 日本：classical 格式（jp.yaml 已并入 Cloudflare 的 15 个 IP 段）
     "my-jp": {
       type: "http", behavior: "classical", format: "yaml",
-      // 注：cdn.jsdelivr.net 该文件缓存未刷新，暂用 fastly 镜像
+      // 本仓库全部用 fastly 镜像：cdn.jsdelivr.net 的 @main 快照缓存滞后严重
       url: "https://fastly.jsdelivr.net/gh/ephore/Broker-Rule@main/Clash/jp.yaml",
       path: "./ruleset/my-jp.yaml", interval: 3600
     },
@@ -216,28 +218,28 @@ function main(config) {
     // 香港：classical 格式（含 DOMAIN-KEYWORD,stripe）
     "my-hk": {
       type: "http", behavior: "classical", format: "yaml",
-      url: "https://cdn.jsdelivr.net/gh/ephore/Broker-Rule@main/Clash/hk.yaml",
+      url: "https://fastly.jsdelivr.net/gh/ephore/Broker-Rule@main/Clash/hk.yaml",
       path: "./ruleset/my-hk.yaml", interval: 3600
     },
 
     // 台湾：domain 格式
     "my-tw": {
       type: "http", behavior: "classical", format: "yaml",
-      url: "https://cdn.jsdelivr.net/gh/ephore/Broker-Rule@main/Clash/tw.yaml",
+      url: "https://fastly.jsdelivr.net/gh/ephore/Broker-Rule@main/Clash/tw.yaml",
       path: "./ruleset/my-tw.yaml", interval: 3600
     },
 
     // 美国：domain 格式
     "my-us": {
       type: "http", behavior: "classical", format: "yaml",
-      url: "https://cdn.jsdelivr.net/gh/ephore/Broker-Rule@main/Clash/us.yaml",
+      url: "https://fastly.jsdelivr.net/gh/ephore/Broker-Rule@main/Clash/us.yaml",
       path: "./ruleset/my-us.yaml", interval: 3600
     },
 
     // 德国：classical 格式（含 DOMAIN-KEYWORD,s2xiwm.）
     "my-de": {
       type: "http", behavior: "classical", format: "yaml",
-      url: "https://cdn.jsdelivr.net/gh/ephore/Broker-Rule@main/Clash/de.yaml",
+      url: "https://fastly.jsdelivr.net/gh/ephore/Broker-Rule@main/Clash/de.yaml",
       path: "./ruleset/my-de.yaml", interval: 3600
     },
 
