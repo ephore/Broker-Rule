@@ -76,7 +76,7 @@ FINAL,PROXY
 
 - `.list` 里**没有注释**（Loon 对规则文件注释的支持依版本而定，为保证解析稳定，注释统一放本 README）
 - `jp.list` 含 Cloudflare 的 15 个 IPv4 + 7 个 IPv6 段 → 所有 Cloudflare 站点走日本节点，注意节点负载
-- 规则集是**远程引用**，首次加载需能访问 `raw.githubusercontent.com`；被墙可换 `fastly.jsdelivr.net` 镜像：`https://fastly.jsdelivr.net/gh/ephore/Broker-Rule@main/Loon/sea.list`
+- 规则集是**远程引用**，统一走 `raw.githubusercontent.com`（无 CDN 缓存，推送即生效）；直连不通时用代理访问，或临时换 `gcore.jsdelivr.net` 镜像（CDN 有 12–24h 缓存滞后，改规则后别指望立刻生效）
 
 ## 同步机制
 
