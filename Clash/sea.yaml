@@ -8,7 +8,7 @@
 #  ⚠️ 脚本里 behavior 必须写 "classical"
 #
 #  更新后清缓存：
-#    https://purge.jsdelivr.net/gh/ephore/Broker-Rule@main/Clash/sea.yaml
+#    https://raw.githubusercontent.com/ephore/Broker-Rule/main/Clash/sea.yaml
 #
 #  内容：
 #    · Polymarket  —— 44 条（kr.yaml 已于 2026-11 清空，规则只保留在本文件）
