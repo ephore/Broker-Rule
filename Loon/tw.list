@@ -20,6 +20,8 @@ DOMAIN-SUFFIX,okx.com
 DOMAIN-SUFFIX,okx.cab
 DOMAIN-SUFFIX,okx.pro
 DOMAIN-SUFFIX,bitget.com
+DOMAIN-SUFFIX,bitget.cloud
+DOMAIN-SUFFIX,bitget.site
 DOMAIN-SUFFIX,bitgetapp.com
 DOMAIN-SUFFIX,bitgetapps.com
 DOMAIN-SUFFIX,abcdstable.com
@@ -31,7 +33,9 @@ DOMAIN-SUFFIX,gateio.services
 DOMAIN-SUFFIX,gatedata.org
 DOMAIN-SUFFIX,gateimg.com
 DOMAIN-SUFFIX,bitkeep.com
+DOMAIN-SUFFIX,bitkeep.io
 DOMAIN-SUFFIX,bitkeep.app
+DOMAIN-SUFFIX,bitkeepwallet.com
 DOMAIN-SUFFIX,bitkeep.vip
 DOMAIN-SUFFIX,bitkeep.top
 DOMAIN-SUFFIX,madlads.com
