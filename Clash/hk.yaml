@@ -2,7 +2,7 @@
 #  指定节点分流规则集 · 香港专线
 #
 #  格式：classical（与 adblock/direct 的 domain 格式不同）
-#    DOMAIN-KEYWORD,stripe
+#    DOMAIN-SUFFIX,stripe.com
 #    DOMAIN-SUFFIX,ifastgp.com
 #    DOMAIN,secure.fundsupermart.com
 #
@@ -15,8 +15,19 @@
 # ══════════════════════════════════════════════════════════════
 payload:
 
-  # ── Stripe（关键词匹配，覆盖所有 stripe 相关域名）（1 条）
-  - 'DOMAIN-KEYWORD,stripe'
+  # ── Stripe（12 条）
+  - 'DOMAIN-SUFFIX,stripe.com'
+  - 'DOMAIN-SUFFIX,stripe.network'
+  - 'DOMAIN-SUFFIX,stripe.dev'
+  - 'DOMAIN-SUFFIX,stripe.events'
+  - 'DOMAIN-SUFFIX,stripe.press'
+  - 'DOMAIN-SUFFIX,stripe.global'
+  - 'DOMAIN-SUFFIX,stripe.tax'
+  - 'DOMAIN-SUFFIX,stripesessions.com'
+  - 'DOMAIN-SUFFIX,stripepartners.com'
+  - 'DOMAIN-SUFFIX,link.com'
+  - 'DOMAIN-SUFFIX,linkpay.io'
+  - 'DOMAIN-SUFFIX,2c2p.com'
 
   # ── iFAST 环球／FSMOne（23 条）
   - 'DOMAIN-SUFFIX,ifastgp.com'
