@@ -12,15 +12,19 @@
 # ══════════════════════════════════════════════════════════════
 payload:
 
-  # ── 交易所 / 钱包 App（Binance / OKX / Bitget / Gate / BitKeep）（34 条）
+  # ── 交易所 / 钱包 App（Binance / OKX / Bitget / Gate / BitKeep）（38 条）
   - 'DOMAIN-SUFFIX,backpack.exchange'
   - 'DOMAIN-SUFFIX,backpack.app'
   - 'DOMAIN-SUFFIX,binance.cloud'
   - 'DOMAIN-SUFFIX,binance.com'
   - 'DOMAIN-SUFFIX,binance.me'
+  - 'DOMAIN-SUFFIX,binance.info'
+  - 'DOMAIN-SUFFIX,binance.org'
+  - 'DOMAIN-SUFFIX,binance.vision'
   - 'DOMAIN-SUFFIX,binancecnt.com'
   - 'DOMAIN-SUFFIX,binancefuture.com'
   - 'DOMAIN-SUFFIX,bnappzh.co'
+  - 'DOMAIN-SUFFIX,bnbchain.org'
   - 'DOMAIN-SUFFIX,bnbstatic.com'
   - 'DOMAIN-SUFFIX,bnbzh.ac'
   - 'DOMAIN-SUFFIX,bntrace.com'
