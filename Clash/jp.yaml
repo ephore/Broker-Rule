@@ -9,7 +9,7 @@
 #  ⚠️ 脚本里 my-jp 的 behavior 必须是 "classical"
 #
 #  更新后清缓存：
-#    https://purge.jsdelivr.net/gh/ephore/Broker-Rule@main/Clash/jp.yaml
+#    https://raw.githubusercontent.com/ephore/Broker-Rule/main/Clash/jp.yaml
 #
 #  注意：Cloudflare 的 15 个 IP 段承载全球数百万站点，
 #        全部指向日本节点后，这些站点都会从日本 IP 出去。
