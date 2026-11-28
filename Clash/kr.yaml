@@ -8,7 +8,7 @@
 #  ⚠️ 脚本里 behavior 必须写 "classical"
 #
 #  更新后清缓存：
-#    https://purge.jsdelivr.net/gh/ephore/Broker-Rule@main/Clash/kr.yaml
+#    https://raw.githubusercontent.com/ephore/Broker-Rule/main/Clash/kr.yaml
 #
 #  ⚠️ 当前为空规则集（Polymarket 规则已迁至 sea.yaml）。
 #     空的 classical 规则集不命中任何流量，韩国专线组等同闲置；
