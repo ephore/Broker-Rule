@@ -39,6 +39,8 @@ DOMAIN-SUFFIX,thinkorswim.com
 DOMAIN-SUFFIX,client.schwabcdn.com
 DOMAIN-SUFFIX,tdameritrade.com
 DOMAIN-SUFFIX,schwabcharitable.org
+DOMAIN-SUFFIX,schwabnetwork.com
+DOMAIN-SUFFIX,schwab.tech
 DOMAIN-SUFFIX,firstrade.com
 DOMAIN-SUFFIX,firstrade.net
 DOMAIN,firstrade-android.firebaseio.com
