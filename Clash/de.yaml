@@ -27,10 +27,20 @@ payload:
   - 'DOMAIN-SUFFIX,number26.de'
   - 'DOMAIN-SUFFIX,tech26.de'
 
-  # ── Kraken（3 条）
-  - 'DOMAIN,kraken.zendesk.com'
+  # ── Kraken（13 条）
   - 'DOMAIN-SUFFIX,kraken.com'
   - 'DOMAIN-SUFFIX,kraken.onl'
+  - 'DOMAIN-SUFFIX,krakenfx.com'
+  - 'DOMAIN-SUFFIX,krakenexchange.com'
+  - 'DOMAIN-SUFFIX,kraken-wallet.com'
+  - 'DOMAIN-SUFFIX,krakenbank.com'
+  - 'DOMAIN-SUFFIX,krakencustody.com'
+  - 'DOMAIN-SUFFIX,kraken.nl'
+  - 'DOMAIN-SUFFIX,krakenbit.com'
+  - 'DOMAIN-SUFFIX,cryptowatch.com'
+  - 'DOMAIN-SUFFIX,krak.app'
+  - 'DOMAIN-SUFFIX,getkrak.com'
+  - 'DOMAIN,kraken.zendesk.com'
 
   # ── Coinbase（1 条）
   - 'DOMAIN-SUFFIX,coinbase.com'
