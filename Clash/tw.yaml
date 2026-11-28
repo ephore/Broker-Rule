@@ -12,9 +12,11 @@
 # ══════════════════════════════════════════════════════════════
 payload:
 
-  # ── 交易所 / 钱包 App（Binance / OKX / Bitget / Gate / BitKeep）（52 条）
+  # ── 交易所 / 钱包 App（Binance / OKX / Bitget / Gate / BitKeep）（54 条）
   - 'DOMAIN-SUFFIX,backpack.exchange'
   - 'DOMAIN-SUFFIX,backpack.app'
+  - 'DOMAIN-SUFFIX,bit.com'
+  - 'DOMAIN-SUFFIX,bitcdns.com'
   - 'DOMAIN-SUFFIX,binance.cloud'
   - 'DOMAIN-SUFFIX,binance.com'
   - 'DOMAIN-SUFFIX,binance.me'
@@ -65,6 +67,13 @@ payload:
   - 'DOMAIN-SUFFIX,freshmarkethome.com'
   - 'DOMAIN-SUFFIX,saasexch.cc'
   - 'DOMAIN-SUFFIX,saasexch.com'
+
+  # ── Matrixport 集团（BIT 交易所后端 / Matrixdock / Cactus Custody）（5 条）
+  - 'DOMAIN-SUFFIX,matrixport.com'
+  - 'DOMAIN-SUFFIX,matrixport.io'
+  - 'DOMAIN-SUFFIX,matrixtechfin.com'
+  - 'DOMAIN-SUFFIX,matrixdock.com'
+  - 'DOMAIN-SUFFIX,mycactus.com'
 
   # ── CDN（1 条）
   - 'DOMAIN,assets.eascdn.net'
