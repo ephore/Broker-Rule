@@ -1,5 +1,8 @@
 DOMAIN-SUFFIX,backpack.exchange
 DOMAIN-SUFFIX,backpack.app
+DOMAIN-SUFFIX,xnftdata.com
+DOMAIN-SUFFIX,xnfts.dev
+DOMAIN-SUFFIX,backpack.workers.dev
 DOMAIN-SUFFIX,bit.com
 DOMAIN-SUFFIX,bitcdns.com
 DOMAIN-SUFFIX,binance.cloud
@@ -103,7 +106,6 @@ DOMAIN-SUFFIX,mpxbroker.com
 DOMAIN-SUFFIX,mycactus.com
 DOMAIN,assets.eascdn.net
 DOMAIN,api.iterable.com
-DOMAIN,backpack-api.xnfts.dev
 DOMAIN,app.smartappnet.net
 DOMAIN,app.studiotv.net
 DOMAIN,api-normal-g1.studiotv.net
