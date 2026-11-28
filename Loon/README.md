@@ -1,12 +1,12 @@
 # Loon 分流规则
 
-与 `Clash/` 目录一一对应，共 **843 条**规则（逐文件条数与 `Clash/*.yaml` 完全一致，由 `scripts/sync_loon.py --check` 校验）。
+与 `Clash/` 目录一一对应，共 **844 条**规则（逐文件条数与 `Clash/*.yaml` 完全一致，由 `scripts/sync_loon.py --check` 校验）。
 
 | 文件 | 条数 | [Rule] 里指定的策略 | 对应 Clash 文件 |
 |---|---|---|---|
 | `adblock.list` | 52 | `REJECT` | Clash/adblock.yaml |
 | `direct.list` | 53 | `DIRECT` | Clash/direct.yaml |
-| `jp.list` | 104 | `🇯🇵 日本专线` | Clash/jp.yaml（含 Cloudflare 15 个 IPv4 + 7 个 IPv6 段） |
+| `jp.list` | 105 | `🇯🇵 日本专线` | Clash/jp.yaml（含 Cloudflare 15 个 IPv4 + 7 个 IPv6 段） |
 | `hk.list` | 48 | `🇭🇰 香港专线` | Clash/hk.yaml |
 | `tw.list` | 146 | `🇨🇳 台湾专线` | Clash/tw.yaml |
 | `us.list` | 318 | `🇺🇸 美国专线` | Clash/us.yaml |
