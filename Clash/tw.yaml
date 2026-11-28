@@ -12,7 +12,7 @@
 # ══════════════════════════════════════════════════════════════
 payload:
 
-  # ── 交易所 / 钱包 App（Binance / OKX / Bitget / Gate / BitKeep）（45 条）
+  # ── 交易所 / 钱包 App（Binance / OKX / Bitget / Gate / BitKeep）（52 条）
   - 'DOMAIN-SUFFIX,backpack.exchange'
   - 'DOMAIN-SUFFIX,backpack.app'
   - 'DOMAIN-SUFFIX,binance.cloud'
@@ -41,8 +41,15 @@ payload:
   - 'DOMAIN-SUFFIX,bitgetapps.com'
   - 'DOMAIN-SUFFIX,abcdstable.com'
   - 'DOMAIN-SUFFIX,krbitget.com'
+  - 'DOMAIN-SUFFIX,gate.ac'
+  - 'DOMAIN-SUFFIX,gate.com'
   - 'DOMAIN-SUFFIX,gate.io'
+  - 'DOMAIN-SUFFIX,gate.us'
+  - 'DOMAIN-SUFFIX,gatechain.io'
   - 'DOMAIN-SUFFIX,gateio.im'
+  - 'DOMAIN-SUFFIX,gateio.io'
+  - 'DOMAIN-SUFFIX,gateio.jp'
+  - 'DOMAIN-SUFFIX,gateio.ws'
   - 'DOMAIN-SUFFIX,gateio.live'
   - 'DOMAIN-SUFFIX,gateio.services'
   - 'DOMAIN-SUFFIX,gatedata.org'
