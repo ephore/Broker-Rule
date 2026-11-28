@@ -1,5 +1,7 @@
 DOMAIN-SUFFIX,backpack.exchange
 DOMAIN-SUFFIX,backpack.app
+DOMAIN-SUFFIX,bit.com
+DOMAIN-SUFFIX,bitcdns.com
 DOMAIN-SUFFIX,binance.cloud
 DOMAIN-SUFFIX,binance.com
 DOMAIN-SUFFIX,binance.me
@@ -50,6 +52,11 @@ DOMAIN-SUFFIX,gposts.net
 DOMAIN-SUFFIX,freshmarkethome.com
 DOMAIN-SUFFIX,saasexch.cc
 DOMAIN-SUFFIX,saasexch.com
+DOMAIN-SUFFIX,matrixport.com
+DOMAIN-SUFFIX,matrixport.io
+DOMAIN-SUFFIX,matrixtechfin.com
+DOMAIN-SUFFIX,matrixdock.com
+DOMAIN-SUFFIX,mycactus.com
 DOMAIN,assets.eascdn.net
 DOMAIN,api.iterable.com
 DOMAIN,backpack-api.xnfts.dev
