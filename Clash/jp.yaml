@@ -16,7 +16,7 @@
 # ══════════════════════════════════════════════════════════════
 payload:
 
-  # ── 券商 / 开发工具（54 条，原有）────────────────────
+  # ── 券商 / 开发工具（56 条，原有）────────────────────
   - 'DOMAIN-SUFFIX,interactivebrokers.com'
   - 'DOMAIN-SUFFIX,interactivebrokers.ie'
   - 'DOMAIN-SUFFIX,interactivebrokers.ca'
@@ -58,6 +58,8 @@ payload:
   - 'DOMAIN-SUFFIX,client.schwabcdn.com'
   - 'DOMAIN-SUFFIX,tdameritrade.com'
   - 'DOMAIN-SUFFIX,schwabcharitable.org'
+  - 'DOMAIN-SUFFIX,schwabnetwork.com'
+  - 'DOMAIN-SUFFIX,schwab.tech'
   - 'DOMAIN-SUFFIX,firstrade.com'
   - 'DOMAIN-SUFFIX,firstrade.net'
   - 'DOMAIN,firstrade-android.firebaseio.com'
