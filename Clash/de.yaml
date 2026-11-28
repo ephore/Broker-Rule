@@ -13,7 +13,7 @@
 # ══════════════════════════════════════════════════════════════
 payload:
 
-  # ── N26 / Number26（12 条）
+  # ── N26 / Number26（18 条）
   - 'DOMAIN-SUFFIX,n26.com'
   - 'DOMAIN-SUFFIX,n26.it'
   - 'DOMAIN-SUFFIX,n26.es'
@@ -25,7 +25,13 @@ payload:
   - 'DOMAIN-SUFFIX,n26.ch'
   - 'DOMAIN-SUFFIX,n26.eu'
   - 'DOMAIN-SUFFIX,number26.de'
+  - 'DOMAIN-SUFFIX,number26.eu'
   - 'DOMAIN-SUFFIX,tech26.de'
+  - 'DOMAIN-SUFFIX,dev-tech26.de'
+  - 'DOMAIN-SUFFIX,staging-tech26.de'
+  - 'DOMAIN-SUFFIX,dev-n26.com'
+  - 'DOMAIN-SUFFIX,staging-n26.com'
+  - 'DOMAIN-SUFFIX,kontenwechsel.de'
 
   # ── Kraken（13 条）
   - 'DOMAIN-SUFFIX,kraken.com'
