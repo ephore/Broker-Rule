@@ -12,7 +12,7 @@
 # ══════════════════════════════════════════════════════════════
 payload:
 
-  # ── 交易所 / 钱包 App（Binance / OKX / Bitget / Gate / BitKeep）（78 条）
+  # ── 交易所 / 钱包 App（Binance / OKX / Bitget / Gate / BitKeep）（87 条）
   - 'DOMAIN-SUFFIX,backpack.exchange'
   - 'DOMAIN-SUFFIX,backpack.app'
   - 'DOMAIN-SUFFIX,bit.com'
@@ -75,6 +75,15 @@ payload:
   - 'DOMAIN-SUFFIX,gateio.services'
   - 'DOMAIN-SUFFIX,gatedata.org'
   - 'DOMAIN-SUFFIX,gateimg.com'
+  - 'DOMAIN-SUFFIX,gate.xyz'
+  - 'DOMAIN-SUFFIX,gate.tr'
+  - 'DOMAIN-SUFFIX,gateapi.io'
+  - 'DOMAIN-SUFFIX,gatebigp.com'
+  - 'DOMAIN-SUFFIX,gatedataimg.com'
+  - 'DOMAIN-SUFFIX,gaterelay.com'
+  - 'DOMAIN-SUFFIX,gateweb3.cc'
+  - 'DOMAIN-SUFFIX,gatemt.com'
+  - 'DOMAIN-SUFFIX,web3gate.io'
   - 'DOMAIN-SUFFIX,bitkeep.com'
   - 'DOMAIN-SUFFIX,bitkeep.io'
   - 'DOMAIN-SUFFIX,bitkeep.app'
@@ -91,6 +100,12 @@ payload:
   - 'DOMAIN-SUFFIX,freshmarkethome.com'
   - 'DOMAIN-SUFFIX,saasexch.cc'
   - 'DOMAIN-SUFFIX,saasexch.com'
+
+  # ── Gate App 自用 CDN / 数据流 / 社交（4 条）
+  - 'DOMAIN-SUFFIX,staticimgs.com'
+  - 'DOMAIN-SUFFIX,bitstreamonline.net'
+  - 'DOMAIN-SUFFIX,w3-api.com'
+  - 'DOMAIN-SUFFIX,panpno.com'
 
   # ── Matrixport 集团（BIT 交易所后端 / App / Matrixdock / Cactus Custody）（12 条）
   - 'DOMAIN-SUFFIX,bitappshare.com'
@@ -121,10 +136,8 @@ payload:
   - 'DOMAIN,api-normal-g1.studiotv.net'
   - 'DOMAIN,snssdk.gatedata.org'
 
-  # ── 统计 / 推送基础设施（10 条）
+  # ── 统计 / 推送基础设施（8 条）
   - 'DOMAIN,h5off.airpackapp.com'
-  - 'DOMAIN,gavatar.staticimgs.com'
-  - 'DOMAIN,gimg.staticimgs.com'
   - 'DOMAIN,log.noxiaohao.com'
   - 'DOMAIN,cdn.jjdsn.site'
   - 'DOMAIN,static-web.jjdsn.vip'
