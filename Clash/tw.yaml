@@ -12,9 +12,12 @@
 # ══════════════════════════════════════════════════════════════
 payload:
 
-  # ── 交易所 / 钱包 App（Binance / OKX / Bitget / Gate / BitKeep）（87 条）
+  # ── 交易所 / 钱包 App（Binance / OKX / Bitget / Gate / BitKeep）（90 条）
   - 'DOMAIN-SUFFIX,backpack.exchange'
   - 'DOMAIN-SUFFIX,backpack.app'
+  - 'DOMAIN-SUFFIX,xnftdata.com'
+  - 'DOMAIN-SUFFIX,xnfts.dev'
+  - 'DOMAIN-SUFFIX,backpack.workers.dev'
   - 'DOMAIN-SUFFIX,bit.com'
   - 'DOMAIN-SUFFIX,bitcdns.com'
   - 'DOMAIN-SUFFIX,binance.cloud'
@@ -126,9 +129,6 @@ payload:
 
   # ── 埋点 / 推送 SDK（1 条）
   - 'DOMAIN,api.iterable.com'
-
-  # ── 钱包与后端 API（1 条）
-  - 'DOMAIN,backpack-api.xnfts.dev'
 
   # ── 应用内 WebView / 落地页（4 条）
   - 'DOMAIN,app.smartappnet.net'
