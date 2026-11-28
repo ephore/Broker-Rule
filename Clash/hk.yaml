@@ -11,7 +11,7 @@
 #  ⚠️ 脚本里 behavior 必须写 "classical"
 #
 #  更新后清缓存：
-#    https://purge.jsdelivr.net/gh/ephore/Broker-Rule@main/Clash/hk.yaml
+#    https://raw.githubusercontent.com/ephore/Broker-Rule/main/Clash/hk.yaml
 # ══════════════════════════════════════════════════════════════
 payload:
 
