@@ -216,7 +216,7 @@ function main(config) {
       path: "./ruleset/my-jp.yaml", interval: 3600
     },
 
-    // 香港：classical 格式（含 DOMAIN-KEYWORD,stripe）
+    // 香港：classical 格式（全部 DOMAIN-SUFFIX，无关键字匹配）
     "my-hk": {
       type: "http", behavior: "classical", format: "yaml",
       url: "https://cdn.jsdelivr.net/gh/ephore/Broker-Rule@main/Clash/hk.yaml",
