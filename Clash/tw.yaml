@@ -104,6 +104,17 @@ payload:
   - 'DOMAIN-SUFFIX,saasexch.cc'
   - 'DOMAIN-SUFFIX,saasexch.com'
 
+  # ── BiyaPay 跨境支付 / 多资产钱包（7 条）
+  #    网页端 45 chunk + APK 3.3.010（Flutter，libapp.so）合并提取
+  #    服务端全在阿里云香港 47.x 段
+  - 'DOMAIN-SUFFIX,biyapay.com'
+  - 'DOMAIN-SUFFIX,biya.in'
+  - 'DOMAIN-SUFFIX,usdb.in'
+  - 'DOMAIN-SUFFIX,biyapay.cc'
+  - 'DOMAIN-SUFFIX,biyainfo.com'
+  - 'DOMAIN-SUFFIX,hxdsmy.com'
+  - 'DOMAIN-SUFFIX,xjdcfq.cn'
+
   # ── Gate App 自用 CDN / 数据流 / 社交（4 条）
   - 'DOMAIN-SUFFIX,staticimgs.com'
   - 'DOMAIN-SUFFIX,bitstreamonline.net'
