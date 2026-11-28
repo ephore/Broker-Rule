@@ -28,9 +28,9 @@
 //  更新：
 //       FlClash ≥ 0.9.4 会记住导入 URL 并自动更新，也可手动触发刷新
 //       < 0.9.4 为一次性下载，改完需重新「URL 导入」或重新粘贴
-//       ⚠️ 规则集 provider 走 cdn.jsdelivr.net，其 @main 快照缓存有滞后：
-//         推送后若拿到旧版，去 purge.jsdelivr.net 清对应文件，或等几分钟
-//         例：https://purge.jsdelivr.net/gh/ephore/Broker-Rule@main/Clash/adblock.yaml
+//       ✅ 规则集 provider 统一走 raw.githubusercontent.com（无 CDN 缓存，推送即生效）
+//         若推送后仍拿旧版，多半是 FlClash 本地 ruleset 缓存，重启连接即可
+//         例：https://raw.githubusercontent.com/ephore/Broker-Rule/main/Clash/adblock.yaml
 // ══════════════════════════════════════════════════════════════
 
 function main(config) {
@@ -57,13 +57,13 @@ function main(config) {
 
     "my-direct": {
       type: "http", behavior: "classical", format: "yaml",
-      url: "https://cdn.jsdelivr.net/gh/ephore/Broker-Rule@main/Clash/direct.yaml",
+      url: "https://raw.githubusercontent.com/ephore/Broker-Rule/main/Clash/direct.yaml",
       path: "./ruleset/my-direct.yaml", interval: 3600
     },
 
     "my-adblock": {
       type: "http", behavior: "classical", format: "yaml",
-      url: "https://cdn.jsdelivr.net/gh/ephore/Broker-Rule@main/Clash/adblock.yaml",
+      url: "https://raw.githubusercontent.com/ephore/Broker-Rule/main/Clash/adblock.yaml",
       path: "./ruleset/my-adblock.yaml", interval: 3600
     },
 
@@ -74,7 +74,7 @@ function main(config) {
     //   想省内存可用 Advertising_Domain.yaml（13.1 万条，无 IP 规则，3.2 MB）
     "bm7-ad": {
       type: "http", behavior: "classical", format: "yaml",
-      url: "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@release/rule/Clash/Advertising/Advertising_Classical.yaml",
+      url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Clash/Advertising/Advertising_Classical.yaml",
       path: "./ruleset/bm7-ad.yaml", interval: 3600
     }
   };
