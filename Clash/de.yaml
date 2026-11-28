@@ -45,6 +45,9 @@ payload:
   # ── Coinbase（1 条）
   - 'DOMAIN-SUFFIX,coinbase.com'
 
+  # ── Neverless（1 条）
+  - 'DOMAIN-SUFFIX,neverless.com'
+
   # ── 风控 / 反欺诈（8 条）
   - 'DOMAIN-SUFFIX,riskified.com'
   - 'DOMAIN,use1-turn.fpjs.io'
