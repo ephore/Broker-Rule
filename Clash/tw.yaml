@@ -68,11 +68,18 @@ payload:
   - 'DOMAIN-SUFFIX,saasexch.cc'
   - 'DOMAIN-SUFFIX,saasexch.com'
 
-  # ── Matrixport 集团（BIT 交易所后端 / Matrixdock / Cactus Custody）（5 条）
+  # ── Matrixport 集团（BIT 交易所后端 / App / Matrixdock / Cactus Custody）（12 条）
+  - 'DOMAIN-SUFFIX,bitappshare.com'
+  - 'DOMAIN-SUFFIX,bitexch.app'
+  - 'DOMAIN-SUFFIX,bitexch.dev'
+  - 'DOMAIN-SUFFIX,bshareweb.com'
   - 'DOMAIN-SUFFIX,matrixport.com'
   - 'DOMAIN-SUFFIX,matrixport.io'
   - 'DOMAIN-SUFFIX,matrixtechfin.com'
+  - 'DOMAIN-SUFFIX,matrixtechfin530.com'
   - 'DOMAIN-SUFFIX,matrixdock.com'
+  - 'DOMAIN-SUFFIX,mptcamp.com'
+  - 'DOMAIN-SUFFIX,mpxbroker.com'
   - 'DOMAIN-SUFFIX,mycactus.com'
 
   # ── CDN（1 条）
