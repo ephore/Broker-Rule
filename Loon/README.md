@@ -1,6 +1,6 @@
 # Loon 分流规则
 
-与 `Clash/` 目录一一对应，共 **826 条**规则（逐文件条数与 `Clash/*.yaml` 完全一致，由 `scripts/sync_loon.py --check` 校验）。
+与 `Clash/` 目录一一对应，共 **832 条**规则（逐文件条数与 `Clash/*.yaml` 完全一致，由 `scripts/sync_loon.py --check` 校验）。
 
 | 文件 | 条数 | [Rule] 里指定的策略 | 对应 Clash 文件 |
 |---|---|---|---|
@@ -10,7 +10,7 @@
 | `hk.list` | 45 | `🇭🇰 香港专线` | Clash/hk.yaml |
 | `tw.list` | 144 | `🇨🇳 台湾专线` | Clash/tw.yaml |
 | `us.list` | 318 | `🇺🇸 美国专线` | Clash/us.yaml |
-| `de.list` | 41 | `🇩🇪 德国专线` | Clash/de.yaml |
+| `de.list` | 47 | `🇩🇪 德国专线` | Clash/de.yaml |
 | `sea.list` | 75 | `🌏 东南亚专线` | Clash/sea.yaml（Polymarket / Hyperliquid / PolyEase / predict.fun / trade.xyz） |
 
 `Clash/kr.yaml` 为空规则集（0 条），不生成对应的 Loon 文件。
