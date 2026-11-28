@@ -12,7 +12,7 @@
 # ══════════════════════════════════════════════════════════════
 payload:
 
-  # ── 交易所 / 钱包 App（Binance / OKX / Bitget / Gate / BitKeep）（67 条）
+  # ── 交易所 / 钱包 App（Binance / OKX / Bitget / Gate / BitKeep）（78 条）
   - 'DOMAIN-SUFFIX,backpack.exchange'
   - 'DOMAIN-SUFFIX,backpack.app'
   - 'DOMAIN-SUFFIX,bit.com'
@@ -54,6 +54,12 @@ payload:
   - 'DOMAIN-SUFFIX,bitget.site'
   - 'DOMAIN-SUFFIX,bitgetapp.com'
   - 'DOMAIN-SUFFIX,bitgetapps.com'
+  - 'DOMAIN-SUFFIX,bitget.bike'
+  - 'DOMAIN-SUFFIX,bitget.farm'
+  - 'DOMAIN-SUFFIX,bitget.io'
+  - 'DOMAIN-SUFFIX,bitget.org'
+  - 'DOMAIN-SUFFIX,bitgetimg.com'
+  - 'DOMAIN-SUFFIX,bitgettr.com'
   - 'DOMAIN-SUFFIX,abcdstable.com'
   - 'DOMAIN-SUFFIX,krbitget.com'
   - 'DOMAIN-SUFFIX,gate.ac'
@@ -75,6 +81,11 @@ payload:
   - 'DOMAIN-SUFFIX,bitkeepwallet.com'
   - 'DOMAIN-SUFFIX,bitkeep.vip'
   - 'DOMAIN-SUFFIX,bitkeep.top'
+  - 'DOMAIN-SUFFIX,bitkeep.asia'
+  - 'DOMAIN-SUFFIX,bitkeep.fun'
+  - 'DOMAIN-SUFFIX,bitkeep.life'
+  - 'DOMAIN-SUFFIX,bitkeep.org'
+  - 'DOMAIN-SUFFIX,bitkeep.zone'
   - 'DOMAIN-SUFFIX,madlads.com'
   - 'DOMAIN-SUFFIX,gposts.net'
   - 'DOMAIN-SUFFIX,freshmarkethome.com'
